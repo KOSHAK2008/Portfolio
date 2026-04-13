@@ -1,0 +1,17 @@
+import styled from "styled-components";
+
+type FlexWraperPropsType = {
+    direction?: string;
+    justify?: string;
+    align?: string;
+    wpar?:string;
+}
+
+export const FlexWraper = styled.div<FlexWraperPropsType>`
+    display: flex;
+    flex-direction: ${props => props.direction || "row"};
+    justify-content: ${props => props.justify || "flex-start"};
+    align-items: ${props => props.align || "stretch"};
+    flex-wrap: ${props => props.wpar || "nowrap"};
+    background-color: #153156;
+`
