@@ -4,7 +4,7 @@ import {BlockSocialNetworks} from "./BlockSocialNetworks.tsx";
 export const MySocialData = () => {
     return (
         <StyledMySocialData>
-<TextMySocial>Let`s Connect</TextMySocial>
+            <TextMySocial>Let`s Connect</TextMySocial>
             <BlockSocialNetworks/>
         </StyledMySocialData>
     );
@@ -14,6 +14,6 @@ const StyledMySocialData = styled.div`
 
 `
 
-const TextMySocial = styled.h3`
+const TextMySocial = styled.h2`
     text-align: center;
 `

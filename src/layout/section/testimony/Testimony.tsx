@@ -8,7 +8,7 @@ export const Testimony = () => {
         <StyledTestimony>
             <FlexWraper>
                 <Slider/>
-                <BlockAboutTestimony></BlockAboutTestimony>
+                <BlockAboutTestimony/>
             </FlexWraper>
         </StyledTestimony>
     );

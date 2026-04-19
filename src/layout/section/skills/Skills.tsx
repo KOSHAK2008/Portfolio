@@ -5,10 +5,10 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Icon iconId={"figma"}/>
-            <Icon iconId={"html"}/>
-            <Icon iconId={"css"}/>
-            <Icon iconId={"sass"}/>
-            <Icon iconId={"react"}/>
+            <Icon iconId={"html"} viewBox="0 0 72 82"/>
+            <Icon iconId={"css"} viewBox="0 0 66 75"/>
+            <Icon iconId={"sass"} viewBox="0 0 100 75"/>
+            <Icon iconId={"react"} viewBox="0 0 100 90"/>
         </StyledSkills>
     );
 };
@@ -19,7 +19,7 @@ const StyledSkills = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     &last-child {
         background-size: cover;
 

@@ -1,18 +1,14 @@
-import styled from "styled-components";
 import {CardOccupation} from "./CardOccupation.tsx";
+import {FlexWraper} from "../../../components/FlexWraper.tsx";
 
 export const BlockOccupation = () => {
     return (
-        <StyledBlockOccupation>
-            <CardOccupation title={"Front End Developer"} icon={"computer"}  height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
+        <FlexWraper justify={"space-around"}>
+            <CardOccupation title={"Front End Developer"} icon={"computer"} height={"30"} width={"30"}
+                            viewBox={"0 0 30 30"}/>
             <CardOccupation title={"UI/UX Designer"} icon={"paint"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
-            <CardOccupation title={"Branding Designer"} icon={"thunder"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
-        </StyledBlockOccupation>
+            <CardOccupation title={"Branding Designer"} icon={"thunder"} height={"30"} width={"30"}
+                            viewBox={"0 0 30 30"}/>
+        </FlexWraper>
     );
 };
-
-const StyledBlockOccupation = styled.div`
-    display: flex;
-    justify-content: space-around;
-    
-`

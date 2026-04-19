@@ -4,18 +4,28 @@ import styled from "styled-components";
 export const BlockSocialNetworks = () => {
     return (
         <StyledBlockSocialNetworks>
-            <SocialNetworks><Icon iconId={"dribble"} height={"23"} width={"23"} viewBox={"0 0 23 23"}/></SocialNetworks>
-            <SocialNetworks><Icon iconId={"github"} height={"25"} width={"25"} viewBox={"0 0 25 25"}/></SocialNetworks>
-            <SocialNetworks><Icon iconId={"linkedin"} height={"25"} width={"25"} viewBox={"0 0 25 25"}/></SocialNetworks>
-            <SocialNetworks><Icon iconId={"upwork"} height={"25"} width={"25"} viewBox={"0 0 25 25"}/></SocialNetworks>
-            <SocialNetworks><Icon iconId={"youtube"} height={"25"} width={"25"} viewBox={"0 0 25 25"}/></SocialNetworks>
+            <SocialNetworks><SocialNetworksLink><Icon iconId={"dribble"} height={"25"} width={"25"}
+                                                      viewBox={"0 0 23 23"}/></SocialNetworksLink></SocialNetworks>
+            <SocialNetworks><SocialNetworksLink><Icon iconId={"github"} height={"25"} width={"25"}
+                                                      viewBox={"0 0 25 25"}/></SocialNetworksLink></SocialNetworks>
+            <SocialNetworks><SocialNetworksLink><Icon iconId={"linkedin"} height={"25"} width={"25"}
+                                                      viewBox={"0 0 23 23"}/></SocialNetworksLink></SocialNetworks>
+            <SocialNetworks><SocialNetworksLink><Icon iconId={"upwork"} height={"25"} width={"25"}
+                                                      viewBox={"0 0 25 18"}/></SocialNetworksLink></SocialNetworks>
+            <SocialNetworks><SocialNetworksLink><Icon iconId={"youtube"} height={"25"} width={"25"}
+                                                      viewBox={"0 0 25 17"}/></SocialNetworksLink></SocialNetworks>
         </StyledBlockSocialNetworks>
     );
 };
 
 const StyledBlockSocialNetworks = styled.ul`
+    display: flex;
 `
 
-const SocialNetworks = styled.a`
+const SocialNetworks = styled.li`
+    list-style-type: none;
+`
+
+const SocialNetworksLink = styled.a`
     padding: 10px;
 `

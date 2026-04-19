@@ -1,12 +1,17 @@
 import {ContactBth} from "../../../components/contact/Contact.tsx";
 import {DownloadCv} from "../../../components/DownloadCv.tsx";
-import {FlexWraper} from "../../../components/FlexWraper.tsx";
+import styled from "styled-components";
 
 export const BoxBth = () => {
     return (
-        <FlexWraper align ={"center"}>
+        <StyledBoxBth>
             <ContactBth>Email me</ContactBth>
             <DownloadCv/>
-        </FlexWraper>
+        </StyledBoxBth>
     );
 };
+
+const StyledBoxBth = styled.div`
+    display: flex;
+    align-items: center,
+`

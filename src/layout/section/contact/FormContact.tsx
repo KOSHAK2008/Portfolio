@@ -8,9 +8,10 @@ export const FormContact = () => {
             <Field/>
             <FieldLabel title={"Your email address:"}>Your email address:</FieldLabel>
             <Field/>
-            <FieldLabel title={"Tell about the project:"}>Your email address:</FieldLabel>
-            <Field/>
-            <ButtonForm type={"submit"}>Send<Icon iconId={"arrowRight"} width={"29"} height={"26"} viewBox={"0 0 29 26"}/></ButtonForm>
+            <FieldLabel title={"Tell about the project:"} >Your email address:</FieldLabel>
+            <Field as={"textarea"}/>
+            <ButtonForm type={"submit"}>Send<Icon iconId={"arrowRight"} width={"29"} height={"26"}
+                                                  viewBox={"0 0 29 26"}/></ButtonForm>
         </StyledFormContact>
     );
 };
@@ -23,12 +24,12 @@ const StyledFormContact = styled.form`
     flex-direction: column;
 `
 const Field = styled.input`
-    
+
 `
 
 const FieldLabel = styled.label`
 
 `
 const ButtonForm = styled.button`
-    
+
 `

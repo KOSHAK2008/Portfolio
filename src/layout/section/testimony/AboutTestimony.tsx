@@ -17,7 +17,8 @@ export const AboutTestimony = (props: AboutTestimonyPropsType) => {
 const StyledAboutTestimony = styled.div`
 `
 
-const TextAboutReviews = styled.h2`
+const TextAboutReviews = styled.h3`
 `
-const FiguresAboutReviews = styled.p`
+
+const FiguresAboutReviews = styled.span`
 `

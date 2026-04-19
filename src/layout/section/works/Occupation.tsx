@@ -4,8 +4,8 @@ import {BlockOccupation} from "./BlockOccupation.tsx";
 export const Occupation = () => {
     return (
         <StyledOccupation>
-            <h1>Developer and Designer, specialized in
-                UI/UX and Web Developer</h1>
+            <h2>Developer and Designer, specialized in
+                UI/UX and Web Developer</h2>
             <BlockOccupation></BlockOccupation>
         </StyledOccupation>
     );
@@ -15,7 +15,7 @@ const StyledOccupation = styled.div`
     width: 65%;
     align-content: space-around;
     
-    h1 {
+    h3 {
         padding: 0 5vh;
         text-align: center;
         font-weight: 700;

@@ -1,12 +1,13 @@
 import {Icon} from "../icon/Icon.tsx";
+import styled from "styled-components";
 
 export const Logo = () => {
     return (
-        <div>
-            <a href="">
-                <Icon iconId={"mail"}/>
-            </a>
-        </div>
+        <StyleLogo href={"#"}>
+                <Icon iconId={"MyLogo"} viewBox={"0 0 431 195"}/>
+        </StyleLogo>
     );
 };
 
+const StyleLogo = styled.a`
+`

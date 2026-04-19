@@ -4,7 +4,7 @@ type FlexWraperPropsType = {
     direction?: string;
     justify?: string;
     align?: string;
-    wpar?:string;
+    wpar?: string;
 }
 
 export const FlexWraper = styled.div<FlexWraperPropsType>`

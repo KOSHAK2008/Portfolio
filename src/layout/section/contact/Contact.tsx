@@ -12,8 +12,8 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-background-color: black;
+    background-color: black;
     display: flex;
-justify-content: space-around;
-padding: 100px 0
+    justify-content: space-around;
+    padding: 100px 0;
 `

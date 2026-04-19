@@ -1,25 +1,25 @@
 import styled from "styled-components";
-import photo from "../../../assets/images/man.png"
-import {FlexWraper} from "../../../components/FlexWraper.tsx";
+import photo from "../../../assets/images/man.webp"
 import {TextHead} from "./TextHead.tsx";
 import {TextBlock} from "./TextBlock.tsx";
+import {Photo} from "../../../components/Image/Image.tsx";
+import {FlexWraper} from "../../../components/FlexWraper.tsx";
+import {BoxBth} from "./BoxBth.tsx";
 
-export const Main = () => {
+const Main = () => {
     return (
-        <div>
-            <FlexWraper align={"center"}>
-                <FlexWraper justify={"space-between"} direction={"column"}>
+        <StyledMain>
+            <FlexWraper direction={"column"}>
                     <TextHead/>
                     <TextBlock/>
-                </FlexWraper>
-                <Photo src={photo} alt=""/>
+                <BoxBth/>
             </FlexWraper>
-        </div>
+                <Photo src={photo} alt="No Photo"/>
+        </StyledMain>
     );
 };
+export default Main
 
-const Photo = styled.img`
-    width: 721px;
-    height: 743px;
-    object-fit: cover;
+const StyledMain = styled.main`
+    display: flex;
 `

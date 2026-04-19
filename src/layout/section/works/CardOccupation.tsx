@@ -13,7 +13,7 @@ export const CardOccupation = (props: CardOccupationPropsType) => {
     return (
         <StyledCardOccupation>
             <Icon iconId={props.icon} height={props.height} width={props.width} viewBox={props.viewBox}/>
-            <h2>{props.title}</h2>
+            <h4>{props.title}</h4>
         </StyledCardOccupation>
     );
 };
@@ -26,5 +26,5 @@ const StyledCardOccupation = styled.div`
     justify-content: flex-end;
     align-items: flex-start;
     background-color: #676cdb;
-    padding: 1vh 3vh ;
+    padding: 3vh;
 `
