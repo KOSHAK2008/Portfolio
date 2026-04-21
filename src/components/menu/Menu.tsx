@@ -17,6 +17,10 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
     display: flex;
     gap: 50px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
     
     ul {
         display: flex;

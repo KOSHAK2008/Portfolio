@@ -31,4 +31,5 @@ const Slide = styled.div`
 const Text = styled.p`
     font-weight: 700;
     font-size: 20px;
+    line-height: 1.8;
 `

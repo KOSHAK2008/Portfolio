@@ -6,13 +6,11 @@ export const TextHead = () => {
     );
 };
 const StyleTextHead = styled.h2`
-    //width: 735px;
-    color: #FFFFFF;
-    //font-family: Playfair Display;
+    width: 735px;
+    font-family: Playfair Display;
     font-weight: 700;
-    //font-style: Bold;
     font-size: 90px;
-    //leading-trim: NONE;
-    line-height: 120%;
-    letter-spacing: 0;
+    // line-height: 108px; 
+    line-height: 1.2;
+    color: #fff;
 `

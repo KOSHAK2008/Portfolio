@@ -22,14 +22,29 @@ const StyledFormContact = styled.form`
     gap: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    
 `
 const Field = styled.input`
-
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
 `
 
 const FieldLabel = styled.label`
-
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
 `
 const ButtonForm = styled.button`
-
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #676cdb;
 `

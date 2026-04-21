@@ -12,16 +12,14 @@ export const TextBlock = () => {
 const StyledTextBlock = styled.h1`
 
     display: inline;
-    //font-family: Poppins;
+    font-family: Poppins;
     font-weight: 400;
-    //font-style: Regular;
     font-size: 20px;
-    //leading-trim: NONE;
-    line-height: 180%;
-    letter-spacing: 0;
-
-    span {
-        color: #FFFFFF;
+    // line-height: 36px; 
+    line-height: 1.8;
+    color: #FFF;
+    
+    &:not (span) {
         opacity: 0.5;
     }
 `

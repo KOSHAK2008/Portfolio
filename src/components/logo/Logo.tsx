@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Logo = () => {
     return (
         <StyleLogo href={"#"}>
-                <Icon iconId={"MyLogo"} viewBox={"0 0 431 195"}/>
+                <Icon iconId={"MyLogo"} height={"50px"} viewBox={"0 0 431 195"}/>
         </StyleLogo>
     );
 };

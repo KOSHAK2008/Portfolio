@@ -9,5 +9,9 @@ export const Contact = () => {
 export const ContactBth = styled.button`
     width: 157px;
     height: 50px;
-    background-color: #676CDB;;
+    background-color: #676CDB;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
 `

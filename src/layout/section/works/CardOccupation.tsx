@@ -19,12 +19,20 @@ export const CardOccupation = (props: CardOccupationPropsType) => {
 };
 
 const StyledCardOccupation = styled.div`
-    height: 25vh;
-    width: 25vh;
+    height: 290px;
+    width: 295px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     background-color: #676cdb;
-    padding: 3vh;
+    padding: 30px;
+
+    h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        //color: #222a36;
+        color: #fff;
+    }
 `

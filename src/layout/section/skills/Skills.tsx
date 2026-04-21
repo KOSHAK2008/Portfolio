@@ -15,7 +15,7 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     height: 200px;
-    background-color: black;
+    background-color: #5c554c;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -13,5 +13,5 @@ export const BoxBth = () => {
 
 const StyledBoxBth = styled.div`
     display: flex;
-    align-items: center,
+    align-items: center;
 `

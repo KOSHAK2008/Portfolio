@@ -15,8 +15,8 @@ const StyledOccupation = styled.div`
     width: 65%;
     align-content: space-around;
     
-    h3 {
-        padding: 0 5vh;
+    h2 {
+        padding: 20px 45px;
         text-align: center;
         font-weight: 700;
         font-size: 40px;

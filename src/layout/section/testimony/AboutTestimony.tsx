@@ -15,10 +15,19 @@ export const AboutTestimony = (props: AboutTestimonyPropsType) => {
 };
 
 const StyledAboutTestimony = styled.div`
+    font-family: "Playfair Display";
 `
 
 const TextAboutReviews = styled.h3`
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #fff;
 `
 
 const FiguresAboutReviews = styled.span`
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #676cdb;
 `
