@@ -14,6 +14,6 @@ export const Works = () => {
 const StyledWorks = styled.section`
     display: flex;
     justify-content: center;
-    background-color: #222A36;
+    background-color: #786352;
     padding: 100px 0;
 `

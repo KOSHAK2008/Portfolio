@@ -15,9 +15,7 @@ const StyledTextBlock = styled.h1`
     font-family: Poppins;
     font-weight: 400;
     font-size: 20px;
-    // line-height: 36px; 
     line-height: 1.8;
-    color: #FFF;
     
     &:not (span) {
         opacity: 0.5;

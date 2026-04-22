@@ -10,4 +10,7 @@ export const Logo = () => {
 };
 
 const StyleLogo = styled.a`
+    & svg{
+        stroke: #b4acac;
+    }
 `

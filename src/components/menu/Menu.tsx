@@ -16,11 +16,14 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
     display: flex;
+    align-items: center;
     gap: 50px;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 20px;
-    color: #fff;
+    a {
+       color: #2b190e; 
+    }
     
     ul {
         display: flex;

@@ -17,8 +17,7 @@ const DownloadCvBth = styled.div`
 
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #fff;
-    background-color: rgb(34, 42, 54);
+    background-color: #ae7d69;
 
     input {
         font-family: "Poppins";

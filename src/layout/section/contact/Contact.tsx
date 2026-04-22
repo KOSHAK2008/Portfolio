@@ -12,7 +12,7 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-    background-color: black;
+    background-color: #533523;
     display: flex;
     justify-content: space-around;
     padding: 100px 0;

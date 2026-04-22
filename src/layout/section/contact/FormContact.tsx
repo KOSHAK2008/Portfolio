@@ -30,8 +30,8 @@ const Field = styled.input`
     background: transparent;
     outline: none;
     padding: 5px 0;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px solid #b4acac;
+    color: #ae7d69;
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
@@ -46,5 +46,5 @@ const ButtonForm = styled.button`
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
-    color: #676cdb;
+    color: #ae7d69;
 `

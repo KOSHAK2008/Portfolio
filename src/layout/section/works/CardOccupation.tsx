@@ -25,14 +25,12 @@ const StyledCardOccupation = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-color: #676cdb;
+    background-color: #ae7d69;
     padding: 30px;
 
     h4 {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
-        //color: #222a36;
-        color: #fff;
     }
 `

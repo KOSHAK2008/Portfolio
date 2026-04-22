@@ -15,5 +15,5 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
-    background-color: rgb(34, 42, 54);
+    background-color: #786352;
 `

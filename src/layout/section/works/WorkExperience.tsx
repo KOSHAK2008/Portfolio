@@ -21,7 +21,7 @@ const StyledWorkExperience = styled.div`
         font-weight: 700;
         font-size: 100px;
         line-height: 1.2;
-        color: #676cdb;
+        color: #ae7d69;
     }
 
     p {

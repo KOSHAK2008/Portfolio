@@ -17,7 +17,7 @@ export const GlobalStyled = createGlobalStyle `
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
-        color: #FFFFFF;
+        color: #b4acac;
     }
 
     a {
