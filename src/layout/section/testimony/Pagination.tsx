@@ -5,10 +5,10 @@ export const Pagination = () => {
     return (
         <StyledPagination>
             <ArrowLeft>
-                <Icon iconId={"arrowLeft"} width={"29"} height={"26"} viewBox={"0 0 29 26"}/>
+                <Icon cursor={"pointer"} colorBg={"#2b190e"} colorBgActive={"red"} iconId={"arrowLeft"} width={"29"} height={"26"} viewBox={"0 0 29 26"}/>
             </ArrowLeft>
             <ArrowRight>
-                <Icon iconId={"arrowRight"} width={"29"} height={"26"} viewBox={"0 0 29 26"}/>
+                <Icon cursor={"pointer"} colorBg={"#2b190e"} colorBgActive={"red"} iconId={"arrowRight"} width={"29"} height={"26"} viewBox={"0 0 29 26"}/>
             </ArrowRight>
         </StyledPagination>
     );

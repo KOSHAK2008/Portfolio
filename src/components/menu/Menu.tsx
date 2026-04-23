@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Contact} from "../contact/Contact.tsx";
+import {ContactButton} from "../contact/ContactButton.tsx";
 
 export const Menu = () => {
     return (
@@ -9,7 +9,7 @@ export const Menu = () => {
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
                 </ul>
-                <Contact/>
+                <ContactButton/>
             </StyledMenu>
     );
 };

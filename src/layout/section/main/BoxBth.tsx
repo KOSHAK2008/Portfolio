@@ -1,4 +1,4 @@
-import {ContactBth} from "../../../components/contact/Contact.tsx";
+import {ContactBth} from "../../../components/contact/ContactButton.tsx";
 import {DownloadCv} from "../../../components/DownloadCv.tsx";
 import styled from "styled-components";
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme.ts";
 
-export const Contact = () => {
+export const ContactButton = () => {
     return (
             <ContactBth>Contact Me</ContactBth>
     );

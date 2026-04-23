@@ -4,15 +4,15 @@ import styled from "styled-components";
 export const BlockSocialNetworks = () => {
     return (
         <StyledBlockSocialNetworks>
-            <SocialNetworks><SocialNetworksLink><Icon iconId={"dribble"} height={"25"} width={"25"}
+            <SocialNetworks><SocialNetworksLink><Icon cursor={"pointer"} colorBg={"#dcccbe"} colorBgActive={"red"} iconId={"dribble"} height={"25"} width={"25"}
                                                       viewBox={"0 0 23 23"}/></SocialNetworksLink></SocialNetworks>
-            <SocialNetworks><SocialNetworksLink><Icon iconId={"github"} height={"25"} width={"25"}
+            <SocialNetworks><SocialNetworksLink><Icon cursor={"pointer"} color={"#dcccbe"} colorActive={"red"} iconId={"github"} height={"25"} width={"25"}
                                                       viewBox={"0 0 25 25"}/></SocialNetworksLink></SocialNetworks>
-            <SocialNetworks><SocialNetworksLink><Icon iconId={"linkedin"} height={"25"} width={"25"}
+            <SocialNetworks><SocialNetworksLink><Icon cursor={"pointer"} color={"#dcccbe"} colorActive={"red"} iconId={"linkedin"} height={"25"} width={"25"}
                                                       viewBox={"0 0 23 23"}/></SocialNetworksLink></SocialNetworks>
-            <SocialNetworks><SocialNetworksLink><Icon iconId={"upwork"} height={"25"} width={"25"}
+            <SocialNetworks><SocialNetworksLink><Icon cursor={"pointer"} color={"#dcccbe"} colorActive={"red"} iconId={"upwork"} height={"25"} width={"25"}
                                                       viewBox={"0 0 25 18"}/></SocialNetworksLink></SocialNetworks>
-            <SocialNetworks><SocialNetworksLink><Icon iconId={"youtube"} height={"25"} width={"25"}
+            <SocialNetworks><SocialNetworksLink><Icon cursor={"pointer"} color={"#dcccbe"} colorActive={"red"} iconId={"youtube"} height={"25"} width={"25"}
                                                       viewBox={"0 0 25 17"}/></SocialNetworksLink></SocialNetworks>
         </StyledBlockSocialNetworks>
     );

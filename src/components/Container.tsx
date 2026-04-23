@@ -15,9 +15,10 @@ export const Container = styled.div<ContainerTypeProps>`
         & {
             padding: 0 125px;
         }
+
         @media screen and (max-width: 1196px) {
-    & {
-        padding: 15px;
-    }    
-}
+            & {
+                padding: 15px;
+            }
+        }
 `
