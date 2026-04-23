@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme.ts";
 
 export const GlobalStyled = createGlobalStyle `
     *,
@@ -17,11 +18,12 @@ export const GlobalStyled = createGlobalStyle `
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
-        color: #b4acac;
+        color: ${theme.colors.font};
     }
 
     a {
         text-decoration: none;
+        color: ${theme.colors.linkcolor};
     }
 
     ul {
@@ -31,6 +33,11 @@ export const GlobalStyled = createGlobalStyle `
     button {
         background-color: unset;
         border: none;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
     }
 
 `

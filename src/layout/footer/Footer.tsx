@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.ts";
 
 export const Footer = () => {
     return (
@@ -8,14 +9,14 @@ export const Footer = () => {
     );
 };
 const StyledFooter = styled.footer`
-    background-color: #533523;
+    background-color: ${theme.colors.secondaryBg};
+    text-align: center;
 `
 const TextFooter = styled.small`
     font-weight: 500;
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 0.02em;
-    text-align: center;
     color: rgba(180, 172, 172, 0.5);
     margin: 0;
 `

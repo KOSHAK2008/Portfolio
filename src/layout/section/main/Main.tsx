@@ -1,23 +1,19 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/MyFoto_II.png"
-import {TextHead} from "./TextHead.tsx";
-import {TextBlock} from "./TextBlock.tsx";
+import {TextHeadName} from "./TextHeadName.tsx";
 import {Photo} from "../../../components/Image/Image.tsx";
-import {BoxBth} from "./BoxBth.tsx";
 import {Container} from "../../../components/Container.tsx";
-import {Header} from "../../header/Header.tsx";
+import {theme} from "../../../styles/Theme.ts";
+import {BlockAboutMe} from "./BlockAboutMe.tsx";
 
 const Main = () => {
     return (
         <StyledMain>
-
             <Position>
-                <Header/>
                 <Container>
                     <MainBlock>
-                    <TextHead/>
-                    <TextBlock/>
-                    <BoxBth/>
+                        <TextHeadName/>
+                        <BlockAboutMe/>
                     </MainBlock>
                 </Container>
             </Position>
@@ -30,12 +26,14 @@ export default Main
 const StyledMain = styled.main`
     display: flex;
     justify-content: flex-end;
-    background-color: #786352;
+    background-color: ${theme.colors.primaryBg};
 `
 const Position = styled.div`
-position: absolute;
+    position: absolute;
+    top: 25%;
+    left: 5%;
 `
 const MainBlock = styled.div`
-width: 735px;
-height: 100%;
+    width: 100%;
+    height: 100%;
 `

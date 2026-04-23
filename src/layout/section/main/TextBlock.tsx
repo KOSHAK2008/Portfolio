@@ -18,6 +18,6 @@ const StyledTextBlock = styled.h1`
     line-height: 1.8;
     
     &:not (span) {
-        opacity: 0.5;
+        //opacity: 0.5;
     }
 `

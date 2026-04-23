@@ -1,12 +1,19 @@
 import styled from "styled-components";
 import {WorkExperience} from "./WorkExperience.tsx";
 import {Occupation} from "./Occupation.tsx";
+import {theme} from "../../../styles/Theme.ts";
+import {Container} from "../../../components/Container.tsx";
+import {FlexWraper} from "../../../components/FlexWraper.tsx";
 
 export const Works = () => {
     return (
         <StyledWorks>
-            <WorkExperience/>
-            <Occupation/>
+            <Container>
+                <FlexWraper justify={"space-between"} align={"center"}>
+                    <WorkExperience/>
+                    <Occupation/>
+                </FlexWraper>
+            </Container>
         </StyledWorks>
     );
 };
@@ -14,6 +21,6 @@ export const Works = () => {
 const StyledWorks = styled.section`
     display: flex;
     justify-content: center;
-    background-color: #786352;
-    padding: 100px 0;
+    background-color: ${theme.colors.primaryBg};
+    padding: 50px 0;
 `

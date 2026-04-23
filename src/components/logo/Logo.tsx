@@ -11,6 +11,6 @@ export const Logo = () => {
 
 const StyleLogo = styled.a`
     & svg{
-        stroke: #b4acac;
+        //stroke: #b4acac;
     }
 `

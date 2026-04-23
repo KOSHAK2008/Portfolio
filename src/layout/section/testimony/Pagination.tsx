@@ -14,6 +14,10 @@ export const Pagination = () => {
     );
 };
 const StyledPagination = styled.div`
+    text-align: center;
+    button{
+        margin: 10px 50px;
+    }
 `
 
 const ArrowRight = styled.button`

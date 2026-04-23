@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 type CardOccupationPropsType = {
     title: string,
@@ -25,7 +26,7 @@ const StyledCardOccupation = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-color: #ae7d69;
+    background-color: ${theme.colors.accent};
     padding: 30px;
 
     h4 {

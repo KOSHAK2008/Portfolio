@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TextHead = () => {
+export const TextHeadName = () => {
     return (<StyleTextHead>Hello! I’m Anton Karko
         </StyleTextHead>
     );

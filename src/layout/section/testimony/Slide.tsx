@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {BlockAboutSlide} from "./BlockAboutSlide.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 type SlideTypeProps = {
     title: string,
@@ -11,23 +13,18 @@ export const Slide = (props: SlideTypeProps) => {
     return (
         <StyledSlide>
             <ImgSlider src={props.img} alt={props.title}></ImgSlider>
-            <Text>{props.text} </Text>
-            <Path href={`https://koshak2008.github.io/${props.href}`}>Click here</Path>
-        </StyledSlide>
+            <BlockAboutSlide text={props.text} href={props.href} title={props.title}/>
+            </StyledSlide>
     );
 };
 
 const ImgSlider = styled.img`
-    width: 325px;
+    width: 400px;
+    //border-top-left-radius: 50px;
+    //border-bottom-left-radius: 50px;
 `
 const StyledSlide = styled.div`
-`
-
-const Text = styled.p`
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.8;
-`
-const Path = styled.a`
-    color: #ae7d69;
+    display: flex;
+    //border-radius: 50px;
+    //background-color: ${theme.colors.thirdBg};
 `

@@ -21,9 +21,6 @@ const StyledMenu = styled.nav`
     font-family: "Poppins";
     font-weight: 500;
     font-size: 20px;
-    a {
-       color: #2b190e; 
-    }
     
     ul {
         display: flex;

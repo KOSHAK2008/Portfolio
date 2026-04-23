@@ -1,19 +1,24 @@
 import styled from "styled-components";
 import {FormContact} from "./FormContact.tsx";
 import {MySocialData} from "./MySocialData.tsx";
+import {theme} from "../../../styles/Theme.ts";
+import {Container} from "../../../components/Container.tsx";
+import {FlexWraper} from "../../../components/FlexWraper.tsx";
 
 export const Contact = () => {
     return (
         <StyledContact>
-            <MySocialData/>
-            <FormContact/>
+            <Container>
+                <FlexWraper justify={"space-around"} align={"space-between"}>
+                    <MySocialData/>
+                    <FormContact/>
+                </FlexWraper>
+            </Container>
         </StyledContact>
     );
 };
 
 const StyledContact = styled.section`
-    background-color: #533523;
-    display: flex;
-    justify-content: space-around;
-    padding: 100px 0;
+    background-color: ${theme.colors.secondaryBg};
+    padding: 50px 0;
 `

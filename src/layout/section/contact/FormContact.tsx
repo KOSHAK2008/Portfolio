@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Icon} from "../../../components/icon/Icon.tsx";
 
 export const FormContact = () => {
     return (
@@ -10,15 +9,13 @@ export const FormContact = () => {
             <Field/>
             <FieldLabel title={"Tell about the project:"} >Your email address:</FieldLabel>
             <Field as={"textarea"}/>
-            <ButtonForm type={"submit"}>Send<Icon iconId={"arrowRight"} width={"29"} height={"26"}
-                                                  viewBox={"0 0 29 26"}/></ButtonForm>
+            <ButtonForm type={"submit"}>Send</ButtonForm>
         </StyledFormContact>
     );
 };
 
 const StyledFormContact = styled.form`
     max-width: 500px;
-    width: 100%;
     gap: 20px;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 import {Icon} from "./icon/Icon.tsx";
 import styled from "styled-components";
+import {theme} from "../styles/Theme.ts";
 
 export const DownloadCv = () => {
     return (
@@ -17,12 +18,11 @@ const DownloadCvBth = styled.div`
 
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    background-color: #ae7d69;
+    background-color: ${theme.colors.accent};
 
     input {
         font-family: "Poppins";
         font-weight: 400;
-        // line-height: 24px; 
         font-size: 20px;
         line-height: 1.2;
     }

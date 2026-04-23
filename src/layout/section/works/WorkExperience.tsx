@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const WorkExperience = () => {
     return (
@@ -21,7 +22,7 @@ const StyledWorkExperience = styled.div`
         font-weight: 700;
         font-size: 100px;
         line-height: 1.2;
-        color: #ae7d69;
+        color: ${theme.colors.accent};
     }
 
     p {
