@@ -15,7 +15,5 @@ const StyledMySocialData = styled.div`
 `
 
 const TextMySocial = styled.h2`
-    //font-weight: 700;
     font-size: 100px;
-    //line-height: 1.2;
 `

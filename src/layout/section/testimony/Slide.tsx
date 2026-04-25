@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {BlockAboutSlide} from "./BlockAboutSlide.tsx";
-import {theme} from "../../../styles/Theme.ts";
 
 type SlideTypeProps = {
     title: string,
@@ -20,11 +19,7 @@ export const Slide = (props: SlideTypeProps) => {
 
 const ImgSlider = styled.img`
     width: 400px;
-    //border-top-left-radius: 50px;
-    //border-bottom-left-radius: 50px;
 `
 const StyledSlide = styled.div`
     display: flex;
-    //border-radius: 50px;
-    //background-color: ${theme.colors.thirdBg};
 `

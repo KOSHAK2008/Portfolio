@@ -18,7 +18,5 @@ const StyledOccupation = styled.div`
     h2 {
         padding: 20px 45px;
         text-align: center;
-        //font-weight: 700;
-        //font-size: 40px;
     }
 `

@@ -14,5 +14,11 @@ export const ContactBth = styled.button`
     font-family: "Poppins";
     font-weight: 500;
     font-size: 20px;
-    color: ${theme.colors.linkcolor};
+    color: ${theme.colors.linkColor};
+
+    &:hover {
+        color: ${theme.colors.icons.colorBgActive};
+        background-color: ${theme.colors.linkColor};
+        cursor: pointer;
+    }
 `

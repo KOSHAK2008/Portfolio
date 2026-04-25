@@ -23,7 +23,7 @@ export const GlobalStyled = createGlobalStyle `
 
     a {
         text-decoration: none;
-        color: ${theme.colors.linkcolor};
+        color: ${theme.colors.linkColor};
     }
 
     ul {

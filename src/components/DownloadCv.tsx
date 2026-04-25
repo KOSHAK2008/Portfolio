@@ -5,25 +5,16 @@ import {theme} from "../styles/Theme.ts";
 export const DownloadCv = () => {
     return (
         <DownloadCvBth >
-            <Icon iconId={"download"} height={"24"} width={"24"} viewBox={"0 0 24 24"}/>
-            <input type="button" value={"download"}></input>
+            <Icon colorBg={theme.colors.icons.colorBg} cursor={"pointer"} colorBgActive={theme.colors.icons.colorBgActive} iconId={"download"} height={"24"} width={"24"} viewBox={"0 0 24 24"}/>Download
         </DownloadCvBth>
     );
 };
 
-const DownloadCvBth = styled.div`
-    width: 136px;
-    height: 24px;
+const DownloadCvBth = styled.a`
     display: flex;
 
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    background-color: ${theme.colors.accent};
-
-    input {
-        font-family: "Poppins";
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.2;
+    &:hover {
+        color: red;
+        cursor: pointer;
     }
 `

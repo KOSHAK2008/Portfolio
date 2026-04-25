@@ -12,7 +12,7 @@ export const BlockAboutSlide = (props:SlideTypeProps) => {
         <StyledBlockAboutSlide>
             <NameProject>{props.title}</NameProject>
             <Text>{props.text} </Text>
-            <Path ><a href={`https://koshak2008.github.io/${props.href}`}>View Project</a></Path>
+            <Path href={`https://koshak2008.github.io/${props.href}`}>View Project</Path>
         </StyledBlockAboutSlide>
     );
 };
@@ -34,7 +34,11 @@ const Text = styled.p`
     font-size: 20px;
     line-height: 1.8;
 `
-const Path = styled.button`
+const Path = styled.a`
+    &:hover {
+        color: ${theme.colors.linkColorActive};
+    }
+    
     // width: 150px;
     // height: 50px;
     // border: 1px solid ${theme.colors.accent};

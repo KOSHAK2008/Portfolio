@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const FormContact = () => {
     return (
@@ -44,4 +45,9 @@ const ButtonForm = styled.button`
     font-size: 30px;
     line-height: 1.2;
     color: #ae7d69;
+
+    &:hover {
+        color: ${theme.colors.linkColorActive};
+        cursor: pointer;
+    }
 `
