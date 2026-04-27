@@ -17,6 +17,15 @@ const TextFooter = styled.small`
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 0.02em;
-    color: rgba(180, 172, 172, 0.5);
+    color: ${theme.colors.footer.color};
     margin: 0;
+
+    span {
+        color: ${theme.colors.footer.secondColor};
+    }
+
+    & span::after {
+        color: ${theme.colors.footer.color};
+        content: " | ";
+    }
 `
