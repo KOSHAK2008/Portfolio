@@ -12,11 +12,12 @@ export const Occupation = () => {
 };
 
 const StyledOccupation = styled.div`
-    width: 65%;
+    width: 75%;
     align-content: space-around;
     
     h2 {
-        padding: 20px 45px;
+        font-size: 40px;
+        margin-bottom: 50px;
         text-align: center;
     }
 `

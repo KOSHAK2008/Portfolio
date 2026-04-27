@@ -30,7 +30,7 @@ const StyledMain = styled.main`
 `
 const Position = styled.div`
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 5%;
 `
 const MainBlock = styled.div`

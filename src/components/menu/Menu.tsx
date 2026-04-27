@@ -19,9 +19,12 @@ const StyledMenu = styled.nav`
     display: flex;
     align-items: center;
     gap: 50px;
-    font-family: "Poppins";
-    font-weight: 500;
+
     font-size: 20px;
+
+    a {
+        font-weight: 500;
+    }
 
     ul {
         display: flex;

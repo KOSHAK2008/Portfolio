@@ -13,19 +13,20 @@ type CardOccupationPropsType = {
 export const CardOccupation = (props: CardOccupationPropsType) => {
     return (
         <StyledCardOccupation>
-            <Icon iconId={props.icon} height={props.height} width={props.width} viewBox={props.viewBox}/>
-            <h4>{props.title}</h4>
+            <CardOccupationSpecific>
+                <Icon iconId={props.icon} height={props.height} width={props.width} viewBox={props.viewBox}/>
+                <h4>{props.title}</h4>
+            </CardOccupationSpecific>
         </StyledCardOccupation>
     );
 };
 
 const StyledCardOccupation = styled.div`
-    height: 290px;
-    width: 295px;
+    height: 295px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
     background-color: ${theme.colors.accent};
     padding: 30px;
 
@@ -33,5 +34,15 @@ const StyledCardOccupation = styled.div`
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
+        text-align: justify;
     }
+`
+
+const CardOccupationSpecific = styled.div`
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 105px;
+    height: 90px;
 `

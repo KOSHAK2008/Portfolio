@@ -11,14 +11,14 @@ export const ContactBth = styled.button`
     width: 157px;
     height: 50px;
     background-color: ${theme.colors.accent};
-    font-family: "Poppins";
+    //font-family: "Poppins";
     font-weight: 500;
     font-size: 20px;
     color: ${theme.colors.linkColor};
 
     &:hover {
         color: ${theme.colors.icons.colorBgActive};
-        background-color: ${theme.colors.linkColor};
+        //background-color: ${theme.colors.linkColor};
         cursor: pointer;
     }
 `

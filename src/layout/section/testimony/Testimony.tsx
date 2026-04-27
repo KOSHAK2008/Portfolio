@@ -21,8 +21,10 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
     background-color: ${theme.colors.primaryBg};
-`
-const TitleSection= styled.h2`
-text-align: center;
     padding: 50px 0;
+`
+const TitleSection = styled.h2`
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
 `

@@ -7,7 +7,6 @@ export const TextHeadName = () => {
 };
 const StyleTextHead = styled.h2`
     width: 735px;
-    font-family: Playfair Display;
     font-weight: 700;
     font-size: 90px;
     line-height: 1.2;

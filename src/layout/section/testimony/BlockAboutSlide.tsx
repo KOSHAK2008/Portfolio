@@ -20,25 +20,27 @@ export const BlockAboutSlide = (props:SlideTypeProps) => {
 const StyledBlockAboutSlide = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 0 50px;
+    font-weight: 700;
+    
 `
 const NameProject = styled.h3`
-    font-weight: 700;
     font-size: 30px; 
     line-height: 1.2;
+    color: ${theme.colors.slider.colorTitleSlide};
 `
 const Text = styled.p`
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.8;
 `
 const Path = styled.a`
+    color: ${theme.colors.slider.colorLinkSlide};
     &:hover {
-        color: ${theme.colors.linkColorActive};
+        color: ${theme.colors.slider.colorLinkSlideActive};
     }
-    
+
     // width: 150px;
     // height: 50px;
     // border: 1px solid ${theme.colors.accent};
