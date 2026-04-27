@@ -1,6 +1,7 @@
 import {TextBlock} from "./TextBlock.tsx";
 import {BoxBth} from "./BoxBth.tsx";
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const BlockAboutMe = () => {
     return (
@@ -18,7 +19,7 @@ const StyledBlockAboutMe =styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    @media screen and (max-width: 550px) {
+    @media ${theme.media.mobile} {
         & {
             width: 100%;
             height: 100%;

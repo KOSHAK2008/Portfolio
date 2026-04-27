@@ -29,7 +29,7 @@ const WorkBlock = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 950px) {
+    @media ${theme.media.tabletBig} {
         & {
             flex-direction: column;
         }

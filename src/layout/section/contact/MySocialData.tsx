@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {BlockSocialNetworks} from "./BlockSocialNetworks.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 export const MySocialData = () => {
     return (
@@ -16,8 +17,9 @@ const StyledMySocialData = styled.div`
 
 const TextMySocial = styled.h2`
     font-size: 100px;
+    margin-bottom: 50px;
 
-    @media screen and (max-width: 450px) {
+    @media ${theme.media.mobile} {
         & {    
             font-size: 50px;
         }

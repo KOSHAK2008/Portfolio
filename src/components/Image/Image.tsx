@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.ts";
 
 type PhotoPropsType = {
     src: string,
@@ -15,14 +16,21 @@ const StyledPhoto = styled.img`
     height: 743px;
     object-fit: cover;
 
-    @media screen and (max-width: 700px) {
+    @media ${theme.media.tablet} {
         & {
             width: 700px;
             height: 600px;
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 630px) {
+        & {
+            width: 600px;
+            height: 680px;
+        }
+    }
+    
+    @media ${theme.media.mobile} {
         & {
             width: 600px;
             height: 500px;
@@ -36,17 +44,31 @@ const StyledPhoto = styled.img`
         }
     }
 
+    @media screen and (max-width: 400px) {
+        & {
+            width: 450px;
+            height: 530px;
+        }
+    }
+
+    @media screen and (max-width: 386px) {
+        & {
+            width: 450px;
+            height: 550px;
+        }
+    }
+
     @media screen and (max-width: 375px) {
         & {
             width: 350px;
-            height: 500px;
+            height: 550px;
         }
     }
 
     @media screen and (max-width: 367px) {
         & {
             width: 350px;
-            height: 550px;
+            height: 600px;
         }
     }
 `

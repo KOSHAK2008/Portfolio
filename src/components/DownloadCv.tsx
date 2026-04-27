@@ -16,7 +16,7 @@ const DownloadCvBth = styled.a`
     font-weight: 400;
     font-size: 20px;
     
-    @media screen and (max-width: 550px) {
+    @media ${theme.media.mobile} {
         & {
             font-size: 16px;
         }

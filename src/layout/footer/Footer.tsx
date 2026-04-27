@@ -29,7 +29,7 @@ const TextFooter = styled.small`
         content: " | ";
     }
 
-    @media screen and (max-width: 450px) {
+    @media ${theme.media.mobile} {
         & {
             font-size: 16px;
         }

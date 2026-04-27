@@ -25,19 +25,19 @@ const StyledBlockAboutSlide = styled.div`
     padding: 0 50px;
     font-weight: 700;
     
-    @media screen and (max-width: 950px) {
+    @media ${theme.media.tabletBig} {
         &{
             padding: 50px 50px;
         }
     }
 `
 const NameProject = styled.h3`
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 1.2;
     color: ${theme.colors.slider.colorTitleSlide};
-    
-    @media screen and (max-width: 950px) {
-        &{
+
+    @media ${theme.media.tabletBig} {
+        & {
             margin-bottom: 30px;
         }
     }
@@ -46,7 +46,7 @@ const Text = styled.p`
     font-size: 20px;
     line-height: 1.8;
     
-    @media screen and (max-width: 950px) {
+    @media ${theme.media.tabletBig} {
         & {
             margin-bottom: 30px;
         }
@@ -54,12 +54,8 @@ const Text = styled.p`
 `
 const Path = styled.a`
     color: ${theme.colors.slider.colorLinkSlide};
+
     &:hover {
         color: ${theme.colors.slider.colorLinkSlideActive};
     }
-
-    // width: 150px;
-    // height: 50px;
-    // border: 1px solid ${theme.colors.accent};
-    // border-radius: 25px;
 `

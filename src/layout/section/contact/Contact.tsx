@@ -26,8 +26,8 @@ const BlockContact = styled.div`
     display: flex;
     justify-content: space-around;
     align-content: space-between;
-    
-    @media screen and (max-width: 950px) {
+
+    @media ${theme.media.tabletBig} {
         & {
             flex-direction: column;
             gap: 50px;

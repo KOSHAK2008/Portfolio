@@ -34,7 +34,7 @@ const Field = styled.input`
     font-size: 30px;
     line-height: 1.2;
 
-    @media screen and (max-width: 450px) {
+    @media ${theme.media.mobile} {
         & {
             font-size: 22px;
         }
@@ -46,7 +46,7 @@ const FieldLabel = styled.label`
     font-size: 30px;
     line-height: 1.2;
 
-    @media screen and (max-width: 450px) {
+    @media ${theme.media.mobile} {
         & {
             font-size: 22px;
         }
@@ -58,7 +58,7 @@ const ButtonForm = styled.button`
     line-height: 1.2;
     color: #ae7d69;
 
-    @media screen and (max-width: 450px) {
+    @media ${theme.media.mobile} {
         & {
             font-size: 22px;
         }

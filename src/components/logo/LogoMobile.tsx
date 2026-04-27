@@ -2,17 +2,21 @@ import {Icon} from "../icon/Icon.tsx";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme.ts";
 
-export const Logo = () => {
+export const LogoMobile = () => {
     return (
-        <StyleLogo href={"#"}>
+        <StyleLogoMobile href={"#"}>
                 <Icon cursor={"pointer"} color={theme.colors.icons.colorMyLogo} colorActive={theme.colors.icons.colorActiveMyLogo} iconId={"MyLogo"} height={"50px"} viewBox={"0 0 431 195"}/>
-        </StyleLogo>
+        </StyleLogoMobile>
     );
 };
 
-const StyleLogo = styled.a`
-    
+const StyleLogoMobile = styled.a`
+    display: none;
+
     @media ${theme.media.tablet} {
-        display: none;
+        display: inline-block;
+        position: fixed;
+        top: 25px;
+        left: 20px;
     }
 `

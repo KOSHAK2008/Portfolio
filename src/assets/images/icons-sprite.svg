@@ -137,7 +137,7 @@ c-47 0 -67 -4 -71 -14z m110 -48 c15 -24 -1 -35 -27 -19 -15 10 -22 10 -25 2
 -9 19 -8 43 2 41 1 42 -30 45 -28 3 -36 -2 -53 -30z"/>
     </g>
 
-    <!-- Menu -->
+    <!-- MobileMenu -->
     <g id="download">
         <path d="M9.33356 11L12.6669 7.66667M9.33356 11V1V11ZM9.33356 11L6.00023 7.66667L9.33356 11Z"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

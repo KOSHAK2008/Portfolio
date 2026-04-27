@@ -2,13 +2,17 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 import {ContactButton} from "../../../components/contact/ContactButton.tsx";
 
-export const Menu = () => {
+export const HeaderMenu = (props: { MenuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
+                {props.MenuItems.map((item, index) => {
+                    return <ListItem key={index}>
+                        <Link href="">
+                            {item}
+                        </Link>
+                    </ListItem>
+                })}
             </ul>
             <ContactButton/>
         </StyledMenu>
@@ -22,17 +26,25 @@ const StyledMenu = styled.nav`
 
     font-size: 20px;
 
-    a {
-        font-weight: 500;
-    }
-
     ul {
         display: flex;
         justify-content: space-between;
         gap: 30px;
     }
 
-    a:hover {
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+`
+
+const ListItem = styled.li`
+
+`
+
+const Link = styled.a`
+    font-weight: 500;
+
+    &:hover {
         color: ${theme.colors.linkColorActive};
     }
 `

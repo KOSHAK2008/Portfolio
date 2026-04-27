@@ -51,7 +51,7 @@ const StyledForm = styled.div`
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media ${theme.media.tablet} {
         &{
             width: 90%;
             height: 65%;

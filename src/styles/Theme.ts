@@ -1,6 +1,7 @@
 export const theme = {
     colors: {
         primaryBg: "#786352", // Цвет основного фона
+        primaryBgPopup: "rgba(120, 99, 82, 0.95)", // Цвет основного фона Popup
         secondaryBg: "#533523", // Цвет второстепенного фона
         thierdBg: "rgba(230, 218, 208, 0.3)", // Цвет светлого фона для темного текста
 
@@ -10,7 +11,7 @@ export const theme = {
 
         accent: "#ae7d69", // Цвет ссылок, кнопок фон
         linkColor: "#2b190e", // Цвет текста в ссылках, кнопках
-        linkColorActive: "red", // Цвет текста в ссылках, кнопках
+        linkColorActive: "red", // Цвет текста в ссылках, кнопках наведенный
 
         icons: {
             color: "#2b190e", // Цвет Иконок "fill"
@@ -34,4 +35,9 @@ export const theme = {
             secondColor: "#dcccbe", // Цвет текста моего имени
         }
     },
+    media: {
+        tabletBig: "screen and (max-width: 950px)",
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
+    }
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme.ts";
 
 type FlexWraperPropsType = {
     direction?: string;
@@ -15,10 +16,9 @@ export const FlexWraper = styled.div<FlexWraperPropsType>`
     flex-wrap: ${props => props.wpar || "nowrap"};
     gap: 15px;
 
-    @media screen and (max-width: 600px) {
+    @media ${theme.media.mobile} {
         & {
             flex-direction: column;
-            align-items: center;
         }
     }
 `

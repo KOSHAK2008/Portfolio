@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const TextHeadName = () => {
     return (<StyleTextHead>Hello! I’m Anton Karko
@@ -11,17 +12,17 @@ const StyleTextHead = styled.h2`
     font-size: 90px;
     line-height: 1.2;
 
-    @media screen and (max-width: 850px) {
-        &{
+    @media ${theme.media.tablet} {
+        & {
             width: 100%;
         }
     }
 
-    @media screen and (max-width: 650px) {
-        &{
+    @media ${theme.media.mobile} {
+        & {
             //width: 100%;
             font-size: 50px;
-            margin-bottom: 50px;     
+            margin-bottom: 50px;
         }
     }
 `

@@ -1,6 +1,7 @@
 import {ContactBth} from "../../../components/contact/ContactButton.tsx";
 import {DownloadCv} from "../../../components/DownloadCv.tsx";
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const BoxBth = () => {
     return (
@@ -16,7 +17,7 @@ const StyledBoxBth = styled.div`
     justify-content: space-around;
     align-items: center;
 
-    @media screen and (max-width: 550px) {
+    @media ${theme.media.mobile} {
         & {
             gap: 30px;
         }

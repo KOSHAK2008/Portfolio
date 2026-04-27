@@ -29,8 +29,8 @@ const StyledWorkExperience = styled.div`
         font-size: 40px;
         line-height: 1.8;
     }
-    
-    @media screen and (max-width: 950px) {
+
+    @media ${theme.media.tabletBig} {
         & {
             width: 100%;
             display: flex;

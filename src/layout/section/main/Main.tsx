@@ -33,20 +33,18 @@ const Position = styled.div`
     top: 15%;
     left: 5%;
 
-    @media screen and (max-width: 600px) {
+    @media ${theme.media.tablet} {
         & {
             left: 0;
-            top: 0;
+            top: 70px;
         }
     }
-    
-    
 `
 const MainBlock = styled.div`
     width: 100%;
     height: 100%;
 
-    @media screen and (max-width: 650px) {
+    @media ${theme.media.tablet} {
         & {
             padding: 25px;
             color: ${theme.colors.fontDark};
@@ -55,7 +53,7 @@ const MainBlock = styled.div`
         }
     }
 
-    @media screen and (max-width: 550px) {
+    @media ${theme.media.mobile} {
         & {
             padding: 25px;
         }
@@ -65,5 +63,5 @@ const MainBlock = styled.div`
         & {
             padding: 10px;
         }
-    }    
+    }
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme.ts";
 
 export const TextBlock = () => {
     return (
@@ -17,7 +18,7 @@ const StyledTextBlock = styled.h1`
     font-size: 20px;
     line-height: 1.8;
 
-    @media screen and (max-width: 650px) {
+    @media ${theme.media.tablet} {
         &{
             //width: 100%;
             font-size: 16px;
