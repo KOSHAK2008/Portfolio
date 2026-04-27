@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {ContactButton} from "../contact/ContactButton.tsx";
-import {theme} from "../../styles/Theme.ts";
+import {theme} from "../../../styles/Theme.ts";
+import {ContactButton} from "../../../components/contact/ContactButton.tsx";
 
 export const Menu = () => {
     return (
