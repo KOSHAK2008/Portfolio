@@ -14,4 +14,11 @@ export const FlexWraper = styled.div<FlexWraperPropsType>`
     align-items: ${props => props.align || "stretch"};
     flex-wrap: ${props => props.wpar || "nowrap"};
     gap: 15px;
+
+    @media screen and (max-width: 600px) {
+        & {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 `

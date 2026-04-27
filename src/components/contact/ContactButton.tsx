@@ -8,13 +8,19 @@ export const ContactButton = () => {
 };
 
 export const ContactBth = styled.button`
-    width: 157px;
+    width: 160px;
     height: 50px;
     background-color: ${theme.colors.accent};
     //font-family: "Poppins";
     font-weight: 500;
     font-size: 20px;
     color: ${theme.colors.linkColor};
+    
+    @media screen and (max-width: 550px) {
+        & {
+            font-size: 16px;
+        }
+    }
 
     &:hover {
         color: ${theme.colors.icons.colorBgActive};

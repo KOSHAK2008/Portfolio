@@ -33,18 +33,36 @@ const Field = styled.input`
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
+
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 22px;
+        }
+    }
 `
 
 const FieldLabel = styled.label`
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
+
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 22px;
+        }
+    }
 `
 const ButtonForm = styled.button`
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
     color: #ae7d69;
+
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 22px;
+        }
+    }
 
     &:hover {
         color: ${theme.colors.linkColorActive};

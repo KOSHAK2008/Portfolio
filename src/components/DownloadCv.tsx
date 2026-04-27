@@ -15,6 +15,12 @@ const DownloadCvBth = styled.a`
     gap: 10px;
     font-weight: 400;
     font-size: 20px;
+    
+    @media screen and (max-width: 550px) {
+        & {
+            font-size: 16px;
+        }
+    }
 
     &:hover {
         color: red;

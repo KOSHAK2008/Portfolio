@@ -31,6 +31,12 @@ export const BlockSocialNetworks = () => {
 
 const StyledBlockSocialNetworks = styled.ul`
     display: flex;
+    
+    @media screen and (max-width: 950px) {
+        & {
+            justify-content: space-around;
+        }
+    }
 `
 
 const SocialNetworks = styled.li`

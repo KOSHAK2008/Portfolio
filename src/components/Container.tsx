@@ -13,12 +13,12 @@ export const Container = styled.div<ContainerTypeProps>`
 
     @media screen and (max-width: 1440px) {
         & {
-            padding: 0 125px;
+            padding: 0 120px;
         }
 
-        @media screen and (max-width: 1196px) {
+        @media screen and (max-width: 1300px) {
             & {
-                padding: 15px;
+                padding: 20px;
             }
         }
 `

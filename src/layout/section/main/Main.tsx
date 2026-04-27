@@ -32,8 +32,38 @@ const Position = styled.div`
     position: absolute;
     top: 15%;
     left: 5%;
+
+    @media screen and (max-width: 600px) {
+        & {
+            left: 0;
+            top: 0;
+        }
+    }
+    
+    
 `
 const MainBlock = styled.div`
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 650px) {
+        & {
+            padding: 25px;
+            color: ${theme.colors.fontDark};
+            background-color: ${theme.colors.thierdBg};
+            border-radius: 5%;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        & {
+            padding: 25px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        & {
+            padding: 10px;
+        }
+    }    
 `

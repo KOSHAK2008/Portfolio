@@ -25,15 +25,32 @@ const StyledBlockAboutSlide = styled.div`
     padding: 0 50px;
     font-weight: 700;
     
+    @media screen and (max-width: 950px) {
+        &{
+            padding: 50px 50px;
+        }
+    }
 `
 const NameProject = styled.h3`
     font-size: 30px; 
     line-height: 1.2;
     color: ${theme.colors.slider.colorTitleSlide};
+    
+    @media screen and (max-width: 950px) {
+        &{
+            margin-bottom: 30px;
+        }
+    }
 `
 const Text = styled.p`
     font-size: 20px;
     line-height: 1.8;
+    
+    @media screen and (max-width: 950px) {
+        & {
+            margin-bottom: 30px;
+        }
+    }
 `
 const Path = styled.a`
     color: ${theme.colors.slider.colorLinkSlide};

@@ -16,6 +16,14 @@ const StyledTextBlock = styled.h1`
     font-weight: 400;
     font-size: 20px;
     line-height: 1.8;
+
+    @media screen and (max-width: 650px) {
+        &{
+            //width: 100%;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
     
     &:not (span) {
         //opacity: 0.5;

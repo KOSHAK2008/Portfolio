@@ -20,4 +20,9 @@ const StyledOccupation = styled.div`
         margin-bottom: 50px;
         text-align: center;
     }
+    
+    @media screen and (max-width: 950px) {
+        & {
+            width: 100%;
+        }
 `

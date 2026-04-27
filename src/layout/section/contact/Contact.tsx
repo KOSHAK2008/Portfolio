@@ -3,16 +3,15 @@ import {FormContact} from "./FormContact.tsx";
 import {MySocialData} from "./MySocialData.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
-import {FlexWraper} from "../../../components/FlexWraper.tsx";
 
 export const Contact = () => {
     return (
         <StyledContact>
             <Container>
-                <FlexWraper justify={"space-around"} align={"space-between"}>
+                <BlockContact>
                     <MySocialData/>
                     <FormContact/>
-                </FlexWraper>
+                </BlockContact>
             </Container>
         </StyledContact>
     );
@@ -21,4 +20,18 @@ export const Contact = () => {
 const StyledContact = styled.section`
     background-color: ${theme.colors.secondaryBg};
     padding: 50px 0;
+`
+
+const BlockContact = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    
+    @media screen and (max-width: 950px) {
+        & {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
 `

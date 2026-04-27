@@ -42,4 +42,5 @@ const StyledIcon = styled.svg<StyledIconPropsType>`
         stroke: ${props => props.colorBgActive || "none"};
         cursor: ${props => props.cursor || "default"};
     }
+
 `

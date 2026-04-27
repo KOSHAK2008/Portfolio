@@ -28,4 +28,10 @@ const TextFooter = styled.small`
         color: ${theme.colors.footer.color};
         content: " | ";
     }
+
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 16px;
+        }
+    }
 `

@@ -29,4 +29,12 @@ const StyledWorkExperience = styled.div`
         font-size: 40px;
         line-height: 1.8;
     }
+    
+    @media screen and (max-width: 950px) {
+        & {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
 `
