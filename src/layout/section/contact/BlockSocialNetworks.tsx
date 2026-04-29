@@ -32,7 +32,7 @@ export const BlockSocialNetworks = () => {
 const StyledBlockSocialNetworks = styled.ul`
     display: flex;
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             justify-content: space-around;
         }

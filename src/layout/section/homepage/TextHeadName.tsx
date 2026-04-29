@@ -20,7 +20,6 @@ const StyleTextHead = styled.h2`
 
     @media ${theme.media.mobile} {
         & {
-            //width: 100%;
             font-size: 50px;
             margin-bottom: 50px;
         }

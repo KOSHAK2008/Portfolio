@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme.ts";
 
 type ContainerTypeProps = {
     maxWidth?: string,
@@ -11,14 +12,14 @@ export const Container = styled.div<ContainerTypeProps>`
     height: ${props => props.height || "100%"};
     margin: 0 auto;
 
-    @media screen and (max-width: 1440px) {
+    @media ${theme.media.tabletBig} {
         & {
             padding: 0 120px;
         }
 
-        @media screen and (max-width: 1300px) {
+        @media ${theme.media.tabletMedium} {
             & {
-                padding: 20px;
+                padding: 0 20px;
             }
         }
 `

@@ -34,12 +34,34 @@ const StyledSkills = styled.section`
     &last-child {
         background-size: cover;
     }
+    
+    @media ${theme.media.tabletMedium}  {
+        padding: 50px 0;
+    }
+    
 `
 const BlockSkils = styled.div`
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     align-items: center;
     justify-items: center;
     gap: 5px;
+    
+    @media ${theme.media.tabletBig} {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    @media ${theme.media.tabletMedium} {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    @media screen and (max-width: 1175px) {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
 `

@@ -20,23 +20,22 @@ export const Slide = (props: SlideTypeProps) => {
 
 const ImgSlider = styled.img`
     width: 400px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    //object-fit: cover;
+    object-fit: contain;
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             width: 100%;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 0;
         }
 `
 const StyledSlide = styled.div`
     display: flex;
     height: 300px;
     border-radius: 25px;
+    overflow: hidden;
     background-color: ${theme.colors.slider.colorBgSlide};
     
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             flex-direction: column;
             height: 100%;

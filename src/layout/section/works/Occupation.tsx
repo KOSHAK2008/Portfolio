@@ -22,7 +22,7 @@ const StyledOccupation = styled.div`
         text-align: center;
     }
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             width: 100%;
         }

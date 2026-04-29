@@ -29,7 +29,7 @@ const WorkBlock = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             flex-direction: column;
         }

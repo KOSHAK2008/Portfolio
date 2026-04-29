@@ -25,7 +25,7 @@ const StyledBlockAboutSlide = styled.div`
     padding: 0 50px;
     font-weight: 700;
     
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         &{
             padding: 50px 50px;
         }
@@ -36,7 +36,7 @@ const NameProject = styled.h3`
     line-height: 1.2;
     color: ${theme.colors.slider.colorTitleSlide};
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             margin-bottom: 30px;
         }
@@ -46,7 +46,7 @@ const Text = styled.p`
     font-size: 20px;
     line-height: 1.8;
     
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             margin-bottom: 30px;
         }

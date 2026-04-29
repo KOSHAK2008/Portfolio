@@ -27,7 +27,7 @@ const BlockContact = styled.div`
     justify-content: space-around;
     align-content: space-between;
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             flex-direction: column;
             gap: 50px;

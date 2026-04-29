@@ -30,7 +30,7 @@ const StyledWorkExperience = styled.div`
         line-height: 1.8;
     }
 
-    @media ${theme.media.tabletBig} {
+    @media ${theme.media.tabletNormal} {
         & {
             width: 100%;
             display: flex;

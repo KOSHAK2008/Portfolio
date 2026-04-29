@@ -12,7 +12,7 @@ import {Slide} from "./Slide.tsx";
 export const Slider = () => {
     return (
         <StyledSlider>
-            <Slide title={"Image Website Online-Zoo"} img={ImageOnlineZoo} href={"online-zoo/pages/main/"}
+            <Slide title={"Image Website Online-Zoo"} img={ImageOnlineZoo} href={"online-zoo/pages/homepage/"}
                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a"}/>
             <Slide title={"Image Website Travel"} img={ImageTravel} href={"travel-Rss-school"}
                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a"}/>

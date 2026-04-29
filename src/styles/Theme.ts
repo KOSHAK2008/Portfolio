@@ -35,9 +35,12 @@ export const theme = {
             secondColor: "#dcccbe", // Цвет текста моего имени
         }
     },
+
     media: {
-        tabletBig: "screen and (max-width: 950px)",
-        tablet: "screen and (max-width: 768px)",
+        tabletBig: "screen and (max-width: 1440px)",
+        tabletMedium: "screen and (max-width: 1300px)",
+        tabletNormal: "screen and (max-width: 950px)",
+        tablet: "screen and (max-width: 780px)",
         mobile: "screen and (max-width: 576px)",
     }
 }
