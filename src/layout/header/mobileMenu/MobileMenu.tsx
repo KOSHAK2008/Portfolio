@@ -2,14 +2,17 @@ import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 import {ContactButton} from "../../../components/contact/ContactButton.tsx";
 import {LogoMobile} from "../../../components/logo/LogoMobile.tsx";
+import {useState} from "react";
 
 export const MobileMenu = (props: { MenuItems: Array<string> }) => {
+    const [menuIsOpnen, setmenuIsOpnen] = useState(false);
+    const onBurgerBthClick = () => {setmenuIsOpnen(!menuIsOpnen)}
     return (
         <StyledMenu>
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpnen} onClick={onBurgerBthClick}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
+            <MobileMenuPopup isOpen={menuIsOpnen} onClick={ () => {setmenuIsOpnen(false)}}>
                 <LogoMobile/>
                 <ul>
                     {props.MenuItems.map((item, index) => {
