@@ -22,7 +22,7 @@ export const GlobalStyled = createGlobalStyle `
     }
 
     a {
-        font-family: "Poppins";
+        font-family: "Poppins", "sans-serif";
         text-decoration: none;
         color: ${theme.colors.linkColor};
     }
@@ -32,13 +32,13 @@ export const GlobalStyled = createGlobalStyle `
     }
 
     button {
-        font-family: "Poppins";
+        font-family: "Poppins", "sans-serif";
         background-color: unset;
         border: none;
     }
 
     h2 {
-        font-family: Playfair Display;
+        font-family: Playfair Display, "sans-serif";
         font-weight: 700;
     }
 

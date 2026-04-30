@@ -4,7 +4,7 @@ import {theme} from "../styles/Theme.ts";
 
 export const DownloadCv = () => {
     return (
-        <DownloadCvBth >
+        <DownloadCvBth>
             <Icon colorBg={theme.colors.icons.colorBg} cursor={"pointer"} colorBgActive={theme.colors.icons.colorBgActive} iconId={"download"} height={"24"} width={"24"} viewBox={"0 0 19 17"}/>Download CV
         </DownloadCvBth>
     );
@@ -23,7 +23,7 @@ const DownloadCvBth = styled.a`
     }
 
     &:hover {
-        color: red;
+        color: ${theme.colors.linkColorActive};
         cursor: pointer;
     }
 `
