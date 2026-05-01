@@ -14,30 +14,28 @@ export const Slide = (props: SlideTypeProps) => {
         <StyledSlide>
             <ImgSlider src={props.img} alt={props.title}></ImgSlider>
             <BlockAboutSlide text={props.text} href={props.href} title={props.title}/>
-            </StyledSlide>
+        </StyledSlide>
     );
 };
 
 const ImgSlider = styled.img`
-    width: 400px;
+    width: 50%;
     object-fit: cover;
-    //object-fit: contain;
 
     @media ${theme.media.tabletNormal} {
         & {
-            width: 100%;
+            width: 50%;
         }
 `
 const StyledSlide = styled.div`
     display: flex;
-    height: 300px;
+    height: 100%;
     border-radius: 25px;
     overflow: hidden;
     background-color: ${theme.colors.slider.colorBgSlide};
-    
+
     @media ${theme.media.tabletNormal} {
         & {
             flex-direction: column;
-            height: 100%;
         }
 `

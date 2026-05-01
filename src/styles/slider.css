@@ -1,9 +1,5 @@
-.alice-carousel__dots {
-    margin: 0;
-}
 
 .alice-carousel__dots-item:not(.__custom) {
-    display: inline-block;
     background-color: #645d56;
     border-radius: 15px;
 }

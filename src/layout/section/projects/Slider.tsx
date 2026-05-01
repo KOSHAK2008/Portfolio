@@ -63,6 +63,7 @@ const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
+    
 `
 
 const ArrowLeft = styled.button`
@@ -70,15 +71,4 @@ const ArrowLeft = styled.button`
 
 const ArrowRight = styled.button`
 `
-
-//
-////
-// export const Slider = () => {
-//     return (
-//         <StyledSlider>
-//
-//         </StyledSlider>
-//     );
-// };
-
 
