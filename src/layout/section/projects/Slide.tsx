@@ -20,8 +20,8 @@ export const Slide = (props: SlideTypeProps) => {
 
 const ImgSlider = styled.img`
     width: 400px;
-    //object-fit: cover;
-    object-fit: contain;
+    object-fit: cover;
+    //object-fit: contain;
 
     @media ${theme.media.tabletNormal} {
         & {

@@ -4,12 +4,12 @@ import {theme} from "../../styles/Theme.ts";
 import {useState} from "react";
 
 export const BlockForm = () => {
-    const [menuisOpenBlockForm, setmenuisOpenBlockForm] = useState(false);
-    const onBlockFormClikc = () => {setmenuisOpenBlockForm(!menuisOpenBlockForm)}
+    const [menuIsOpenBlockForm, setMenuIsOpenBlockForm] = useState(false);
+    const onBlockFormClick = () => {setMenuIsOpenBlockForm(!menuIsOpenBlockForm)}
     return (
-        <StyledBlockForm isOpen={menuisOpenBlockForm}>
+        <StyledBlockForm isOpen={menuIsOpenBlockForm}>
             <StyledForm>
-                <BlockFormButton isOpen={menuisOpenBlockForm} onClick={onBlockFormClikc}>
+                <BlockFormButton isOpen={menuIsOpenBlockForm} onClick={onBlockFormClick}>
                     <span></span>
                 </BlockFormButton>
                 <FormContact />

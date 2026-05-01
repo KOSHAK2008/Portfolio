@@ -3,7 +3,7 @@ import {Header} from "./layout/header/Header.tsx";
 import {Homepage} from "./layout/section/homepage/Homepage.tsx";
 import {Skills} from "./layout/section/skills/Skills.tsx";
 import {Works} from "./layout/section/works/Works.tsx";
-import {Testimony} from "./layout/section/testimony/Testimony.tsx";
+import {Projects} from "./layout/section/projects/Projects.tsx";
 import {Contact} from "./layout/section/contact/Contact.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {BlockForm} from "./components/blockForm/BlockForm.tsx";
@@ -16,7 +16,7 @@ function App() {
             <Homepage/>
             <Skills/>
             <Works/>
-            <Testimony/>
+            <Projects/>
             <Contact/>
             <Footer/>
         </div>

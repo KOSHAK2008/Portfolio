@@ -1,25 +1,23 @@
 import styled from "styled-components";
-// import {BlockAboutTestimony} from "./BlockAboutTestimony.tsx";
 import {Slider} from "./Slider.tsx";
 import {FlexWraper} from "../../../components/FlexWraper.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
 
-export const Testimony = () => {
+export const Projects = () => {
     return (
-        <StyledTestimony>
+        <StyledProjects>
             <Container>
                 <FlexWraper direction={"column"}>
                     <TitleSection>My Projects</TitleSection>
                     <Slider/>
-                    {/*<BlockAboutTestimony/>*/}
                 </FlexWraper>
             </Container>
-        </StyledTestimony>
+        </StyledProjects>
     );
 };
 
-const StyledTestimony = styled.section`
+const StyledProjects = styled.section`
     background-color: ${theme.colors.primaryBg};
     padding: 50px 0;
 `
