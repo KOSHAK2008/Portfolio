@@ -8,7 +8,7 @@ import {BlockAboutMe} from "./BlockAboutMe.tsx";
 
 export const Homepage = () => {
     return (
-        <StyledHomepage>
+        <StyledHomepage id={"home"}>
             <Container>
                 <HomepageGround>
                     <HomepageBlock>

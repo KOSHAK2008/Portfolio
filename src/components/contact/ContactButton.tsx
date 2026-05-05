@@ -3,7 +3,7 @@ import {theme} from "../../styles/Theme.ts";
 
 export const ContactButton = () => {
     return (
-            <ContactBth>Contact Me</ContactBth>
+            <ContactBth >Contact Me</ContactBth>
     );
 };
 
@@ -24,5 +24,8 @@ export const ContactBth = styled.button`
     &:hover {
         color: ${theme.colors.icons.colorBgActive};
         cursor: pointer;
+    }
+    &:active{
+        transform: scale(1.1);
     }
 `

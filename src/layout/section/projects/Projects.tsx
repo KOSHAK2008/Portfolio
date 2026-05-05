@@ -6,7 +6,7 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id={"projects"}>
             <Container>
                 <FlexWraper direction={"column"}>
                     <TitleSection>My Projects</TitleSection>

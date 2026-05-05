@@ -1,16 +1,20 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 import {ContactButton} from "../../../components/contact/ContactButton.tsx";
+import {Link} from "react-scroll";
 
-export const HeaderMenu = (props: { MenuItems: Array<string> }) => {
+export const HeaderMenu = (props: { MenuItems: Array<{ title: string, href: string }> }) => {
     return (
         <StyledMenu>
             <ul>
                 {props.MenuItems.map((item, index) => {
                     return <ListItem key={index}>
-                        <Link href="">
-                            {item}
-                        </Link>
+                        <NavLink
+                            to={item.href}
+                            smooth={true}
+                        >
+                            {item.title}
+                        </NavLink>
                     </ListItem>
                 })}
             </ul>
@@ -41,10 +45,11 @@ const ListItem = styled.li`
 
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
     font-weight: 500;
 
     &:hover {
+        cursor: pointer;
         color: ${theme.colors.linkColorActive};
     }
 `

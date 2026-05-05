@@ -6,7 +6,7 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Works = () => {
     return (
-        <StyledWorks>
+        <StyledWorks id={"about me"}>
             <Container>
                 <WorkBlock>
                     <WorkExperience/>

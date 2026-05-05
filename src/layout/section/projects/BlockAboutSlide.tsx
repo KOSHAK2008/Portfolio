@@ -35,6 +35,10 @@ const NameProject = styled.h3`
     font-size: 30px;
     line-height: 1.2;
     color: ${theme.colors.slider.colorTitleSlide};
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Стандартный CSS */
 
     @media ${theme.media.tabletNormal} {
         & {
@@ -45,6 +49,10 @@ const NameProject = styled.h3`
 const Text = styled.p`
     font-size: 20px;
     line-height: 1.8;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Стандартный CSS */
     
     @media ${theme.media.tabletNormal} {
         & {

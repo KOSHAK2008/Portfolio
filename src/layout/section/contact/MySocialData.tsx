@@ -12,7 +12,13 @@ export const MySocialData = () => {
 };
 
 const StyledMySocialData = styled.div`
-
+    max-width: 700px;
+    
+    @media ${theme.media.tabletMedium} {
+        & {
+            max-width: 550px;
+        }
+    }
 `
 
 const TextMySocial = styled.h2`

@@ -5,7 +5,7 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={"skills"}>
             <Container>
                 <BlockSkils>
                     <Icon iconId={"vsCode"} viewBox="0 0 24 24"/>

@@ -21,10 +21,11 @@ export const Slide = (props: SlideTypeProps) => {
 const ImgSlider = styled.img`
     width: 50%;
     object-fit: cover;
+    pointer-events: none;
 
     @media ${theme.media.tabletNormal} {
         & {
-            width: 50%;
+            width: 100%;
         }
 `
 const StyledSlide = styled.div`
@@ -33,6 +34,10 @@ const StyledSlide = styled.div`
     border-radius: 25px;
     overflow: hidden;
     background-color: ${theme.colors.slider.colorBgSlide};
+
+    &:hover {
+        cursor: grabbing;
+    }
 
     @media ${theme.media.tabletNormal} {
         & {

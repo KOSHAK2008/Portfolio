@@ -3,21 +3,31 @@ import {theme} from "../../../styles/Theme.ts";
 import {ContactButton} from "../../../components/contact/ContactButton.tsx";
 import {LogoMobile} from "../../../components/logo/LogoMobile.tsx";
 import {useState} from "react";
+import {Link} from "react-scroll";
 
-export const MobileMenu = (props: { MenuItems: Array<string> }) => {
-    const [menuIsOpnen, setmenuIsOpnen] = useState(false);
-    const onBurgerBthClick = () => {setmenuIsOpnen(!menuIsOpnen)}
+export const MobileMenu = (props: { MenuItems: Array<{ title: string, href: string }> }) => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false);
+    const onBurgerBthClick = () => {
+        setMenuIsOpen(!menuIsOpen)
+    }
     return (
         <StyledMenu>
-            <BurgerButton isOpen={menuIsOpnen} onClick={onBurgerBthClick}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBthClick}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={menuIsOpnen} onClick={ () => {setmenuIsOpnen(false)}}>
+            <MobileMenuPopup isOpen={menuIsOpen} onClick={() => {
+                setMenuIsOpen(false)
+            }}>
                 <LogoMobile/>
                 <ul>
                     {props.MenuItems.map((item, index) => {
                         return <ListItem key={index}>
-                            <Link href="">{item}</Link>
+                            <NavLink
+                                to={item.href}
+                                smooth={true}
+                            >
+                                {item.title}
+                            </NavLink>
                         </ListItem>
                     })}
                 </ul>
@@ -29,7 +39,7 @@ export const MobileMenu = (props: { MenuItems: Array<string> }) => {
 
 const StyledMenu = styled.nav`
     display: none;
-   
+
     font-size: 20px;
 
     @media ${theme.media.tablet} {
@@ -39,7 +49,7 @@ const StyledMenu = styled.nav`
     }
 `
 
-const BurgerButton = styled.button<{isOpen: boolean}>`
+const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
     width: 50px;
     height: 50px;
@@ -82,7 +92,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             height: 4px;
             background-color: ${theme.colors.font};
             transform: translateY(7px);
-            
+
             ${props => props.isOpen && css<{ isOpen: boolean }>`
                 transform: rotate(-45deg) translateY(-3px);
                 width: 40px;
@@ -91,7 +101,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     }
 `
 
-const MobileMenuPopup = styled.div<{isOpen: boolean}>`
+const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -100,14 +110,13 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     z-index: 999;
     background-color: ${theme.colors.primaryBgPopup};
     display: none;
-    
-    ${props => props.isOpen && css<{isOpen: boolean}> `
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     `}
-
     ul {
         display: flex;
         justify-content: space-between;
@@ -122,10 +131,11 @@ const ListItem = styled.li`
 
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
     font-weight: 500;
 
     &:hover {
+        cursor: pointer;
         color: ${theme.colors.linkColorActive};
     }
 `

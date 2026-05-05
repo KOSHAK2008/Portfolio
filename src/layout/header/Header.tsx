@@ -6,7 +6,28 @@ import {HeaderMenu} from "./headerMenu/HeaderMenu.tsx";
 import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 import {theme} from "../../styles/Theme.ts";
 
-const items =["Home", "About", 'Service'];
+const items = [
+    {
+        title: "Home",
+        href: "home",
+    },
+    {
+        title: "Skills",
+        href: "skills",
+    },
+    {
+        title: "About me",
+        href: "about me",
+    },
+    {
+        title: "Projects",
+        href: "projects",
+    },
+    {
+        title: "Contact",
+        href: "contact",
+    },
+];
 
 export const Header = () => {
     return (

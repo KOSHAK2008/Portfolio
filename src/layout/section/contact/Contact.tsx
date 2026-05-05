@@ -6,7 +6,7 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Contact = () => {
     return (
-        <StyledContact>
+        <StyledContact id={"contact"}>
             <Container>
                 <BlockContact>
                     <MySocialData/>
