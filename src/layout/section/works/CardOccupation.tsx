@@ -2,21 +2,39 @@ import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon.tsx";
 import {theme} from "../../../styles/Theme.ts";
 
-type CardOccupationPropsType = {
-    title: string,
-    icon: string,
-    height?: string;
-    width?: string,
-    viewBox?: string,
-}
+type CardOccupationPropsType = Array<
+    {
+        title: string,
+        place: string,
+        date?: string;
+        icon?: string,
+        heightIcon?: string,
+        widthIcon?: string,
+        viewBoxIcon?: string,
+    }>
 
-export const CardOccupation = (props: CardOccupationPropsType) => {
+export const CardOccupation = (props: { dataExperience: CardOccupationPropsType }) => {
     return (
         <StyledCardOccupation>
-            <CardOccupationSpecific>
-                <Icon iconId={props.icon} height={props.height} width={props.width} viewBox={props.viewBox}/>
-                <h4>{props.title}</h4>
-            </CardOccupationSpecific>
+            {props.dataExperience.map((item, index) => {
+                return <CardOccupationSpecific key={index}>
+                    <h3>{item.title}</h3>
+                    <div>
+                        <Icon iconId={item.icon} height={item.heightIcon} width={item.widthIcon}
+                              viewBox={item.viewBoxIcon}/>
+                        <h4>{item.place}</h4>
+                    </div>
+                    <div>
+                        <Icon iconId={item.icon} height={item.heightIcon} width={item.widthIcon}
+                              viewBox={item.viewBoxIcon}/>
+                        <h4>{item.date}</h4>
+                    </div>
+                </CardOccupationSpecific>
+            })}
+            {/*// <CardOccupationSpecific>*/}
+            {/*// <Icon iconId={props.icon} height={props.heightIcon} width={props.widthIcon} viewBox={props.viewBoxIcon}/>*/}
+            {/*// <h4>{props.title}</h4>*/}
+            {/*// </CardOccupationSpecific>*/}
         </StyledCardOccupation>
     );
 };

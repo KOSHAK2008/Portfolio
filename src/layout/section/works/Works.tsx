@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {WorkExperience} from "./WorkExperience.tsx";
+// import {WorkExperience} from "./WorkExperience.tsx";
 import {Occupation} from "./Occupation.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
@@ -9,7 +9,7 @@ export const Works = () => {
         <StyledWorks id={"about me"}>
             <Container>
                 <WorkBlock>
-                    <WorkExperience/>
+                    {/*<WorkExperience/>*/}
                     <Occupation/>
                 </WorkBlock>
             </Container>

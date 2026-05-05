@@ -2,8 +2,8 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 
 export const TextHeadName = () => {
-    return (<StyleTextHead>Hello! I’m Anton Karko
-        </StyleTextHead>
+    return (
+        <StyleTextHead>Hello! I’m Anton Karko</StyleTextHead>
     );
 };
 const StyleTextHead = styled.h2`

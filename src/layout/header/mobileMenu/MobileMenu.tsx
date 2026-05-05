@@ -131,6 +131,7 @@ const ListItem = styled.li`
 
 `
 
+// @ts-expect-error
 const NavLink = styled(Link)`
     font-weight: 500;
 

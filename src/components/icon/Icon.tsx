@@ -2,7 +2,7 @@ import iconsSprite from '../../assets/images/icons-sprite.svg'
 import styled from "styled-components";
 
 type IconPropsType = {
-    iconId: string;
+    iconId?: string;
     width?: string;
     height?: string;
     viewBox?: string;
@@ -32,6 +32,12 @@ export const Icon = (props: IconPropsType) => {
 };
 
 const StyledIcon = styled.svg<StyledIconPropsType>`
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    
     & {
         fill: ${props => props.color || "none"};
         stroke: ${props => props.colorBg || "none"};

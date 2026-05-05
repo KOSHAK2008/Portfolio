@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@types/react-scroll": "^1.8.10",
     "install": "^0.13.0",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
+    "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18.3.1",
     "react-parallax-tilt": "^1.7.326",
     "react-scroll": "^1.9.3",

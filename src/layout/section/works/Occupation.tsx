@@ -5,8 +5,7 @@ import {theme} from "../../../styles/Theme.ts";
 export const Occupation = () => {
     return (
         <StyledOccupation>
-            <h2>Developer and Designer, specialized in
-                UI/UX and Web Developer</h2>
+            <h2>My Experience</h2>
             <BlockOccupation></BlockOccupation>
         </StyledOccupation>
     );
