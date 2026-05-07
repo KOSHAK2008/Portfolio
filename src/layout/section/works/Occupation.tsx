@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {BlockOccupation} from "./BlockOccupation.tsx";
-import {theme} from "../../../styles/Theme.ts";
 
 export const Occupation = () => {
     return (
@@ -12,17 +11,13 @@ export const Occupation = () => {
 };
 
 const StyledOccupation = styled.div`
-    width: 75%;
+    width: 100%;
     align-content: space-around;
 
     h2 {
-        font-size: 40px;
+        font-weight: 700;
+        font-size: 42px;
         margin-bottom: 50px;
         text-align: center;
     }
-
-    @media ${theme.media.tabletNormal} {
-        & {
-            width: 100%;
-        }
 `

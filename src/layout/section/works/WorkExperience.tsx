@@ -15,7 +15,7 @@ export const WorkExperience = () => {
 const StyledWorkExperience = styled.div`
 
     width: 20%;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", "sans-serif";
 
     span {
         font-weight: 700;

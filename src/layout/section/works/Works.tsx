@@ -9,7 +9,6 @@ export const Works = () => {
         <StyledWorks id={"about me"}>
             <Container>
                 <WorkBlock>
-                    {/*<WorkExperience/>*/}
                     <Occupation/>
                 </WorkBlock>
             </Container>

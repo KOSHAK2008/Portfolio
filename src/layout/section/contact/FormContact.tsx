@@ -4,12 +4,18 @@ import {theme} from "../../../styles/Theme.ts";
 export const FormContact = () => {
     return (
         <StyledFormContact>
-            <FieldLabel title={"Your name"}>Your name:</FieldLabel>
-            <Field placeholder={"FirstName LastName"} />
-            <FieldLabel title={"Your email address:"}>Your email address:</FieldLabel>
-            <Field placeholder={"myEmail@gmail.com"} type={"email"}/>
-            <FieldLabel  title={"Tell about the project:"} >Your email address:</FieldLabel>
-            <Field placeholder={"Tell about the project"} as={"textarea"}/>
+            <BlockField>
+                <Field id="textName" placeholder={"FirstName LastName"}/>
+                <FieldLabel htmlFor="textName" title={"Your name"}>Your name:</FieldLabel>
+            </BlockField>
+            <BlockField>
+                <Field id="textEmail" placeholder={"YourEmail@gmail.com"} type={"email"}/>
+                <FieldLabel htmlFor="textEmail" title={"Your email address:"}>Your email address:</FieldLabel>
+            </BlockField>
+            <BlockField>
+                <Field id="textOffer" placeholder={"Write about your offer"} as={"textarea"}/>
+                <FieldLabel htmlFor="textOffer" title={"Tell about the project:"}>Your offer:</FieldLabel>
+            </BlockField>
             <ButtonForm type={"submit"}>Send</ButtonForm>
         </StyledFormContact>
     );
@@ -30,13 +36,34 @@ const StyledFormContact = styled.form`
     @media ${theme.media.tabletNormal} {
         max-width: 400px;
     }
-    
+
     @media ${theme.media.mobile} {
         max-width: 300px;
     }
 
 `
+
+const BlockField = styled.div`
+    position: relative;
+    padding-top: 20px;
+`
+const FieldLabel = styled.label`
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    position: absolute;
+    left: 2px;
+    transition: 0.2s;
+
+    @media ${theme.media.mobile} {
+        & {
+            font-size: 22px;
+        }
+    }
+`
+
 const Field = styled.input`
+    position: relative;
     width: 100%;
     border: none;
     background: transparent;
@@ -48,24 +75,22 @@ const Field = styled.input`
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
+    z-index: 1;
 
-
+&:focus + label,
+&:not(:placeholder-shown) + label {
+    transform: translateY( -2.2rem);
+    font-size: 1.5rem;
+}
+    
+    &::placeholder{
+        opacity: 0;
+    }
+    
     &:focus-visible {
         outline: 1px solid ${theme.colors.font};
         border-radius: 5px;
     }
-    
-    @media ${theme.media.mobile} {
-        & {
-            font-size: 22px;
-        }
-    }
-`
-
-const FieldLabel = styled.label`
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 1.2;
 
     @media ${theme.media.mobile} {
         & {
@@ -73,6 +98,8 @@ const FieldLabel = styled.label`
         }
     }
 `
+
+
 const ButtonForm = styled.button`
     font-weight: 500;
     font-size: 30px;

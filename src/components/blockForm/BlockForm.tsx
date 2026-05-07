@@ -4,7 +4,7 @@ import {theme} from "../../styles/Theme.ts";
 import {useState} from "react";
 
 export const BlockForm = () => {
-    const [menuIsOpenBlockForm, setMenuIsOpenBlockForm] = useState(false);
+    const [menuIsOpenBlockForm, setMenuIsOpenBlockForm] = useState(true);
     const onBlockFormClick = () => {setMenuIsOpenBlockForm(!menuIsOpenBlockForm)}
     return (
         <StyledBlockForm isOpen={menuIsOpenBlockForm}>
@@ -18,7 +18,7 @@ export const BlockForm = () => {
     );
 };
 
-const StyledBlockForm = styled.div<{ isOpen: boolean }>`
+export const StyledBlockForm = styled.div<{ isOpen: boolean }>`
     position: fixed;
     top: 0;
     left: 0;

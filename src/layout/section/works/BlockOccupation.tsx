@@ -6,19 +6,40 @@ const data = [
         title: "school",
         place: "Lida, Masherova",
         date: "Sep 1997 - may 2006",
-        icon: "computer",
+        iconBuilding: "building",
+        iconDate: "date",
+        iconLocation: "location",
         heightIcon:"30",
         widthIcon: "30",
-        viewBoxIcon: "0 0 21 23",
+        viewBoxIconBuilding: "0 0 7 9",
+        viewBoxIconDate: "0 0 12 9",
+        viewBoxIconLocation: "0 0 12 12",
     },
     {
         title: "school",
         place: "Lida, Masherova",
         date: "Sep 1997 - may 2006",
-        icon: "computer",
+        iconBuilding: "building",
+        iconDate: "date",
+        iconLocation: "location",
         heightIcon:"30",
         widthIcon: "30",
-        viewBoxIcon: "0 0 21 23",
+        viewBoxIconBuilding: "0 0 7 9",
+        viewBoxIconDate: "0 0 12 9",
+        viewBoxIconLocation: "0 0 12 12",
+    },
+    {
+        title: "school",
+        place: "Lida, Masherova",
+        date: "Sep 1997 - may 2006",
+        iconBuilding: "building",
+        iconDate: "date",
+        iconLocation: "location",
+        heightIcon:"30",
+        widthIcon: "30",
+        viewBoxIconBuilding: "0 0 7 9",
+        viewBoxIconDate: "0 0 12 9",
+        viewBoxIconLocation: "0 0 12 12",
     },
 ]
 
@@ -26,9 +47,6 @@ export const BlockOccupation = () => {
     return (
         <FlexWraper justify={"space-around"} direction={"column"}>
             <CardOccupation dataExperience={data}/>
-            {/*<CardOccupation title={"UI/UX Designer"} icon={"paint"} height={"30"} width={"30"} viewBox={"0 0 29 29"}/>*/}
-            {/*<CardOccupation title={"Branding Designer"} icon={"thunder"} height={"30"} width={"30"}*/}
-            {/*                viewBox={"0 0 23 27"}/>*/}
         </FlexWraper>
     );
 };
