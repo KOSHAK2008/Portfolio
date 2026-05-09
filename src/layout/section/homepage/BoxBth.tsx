@@ -3,10 +3,11 @@ import {DownloadCv} from "../../../components/DownloadCv.tsx";
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 
-export const BoxBth = () => {
+export const BoxBth = (props: {menuIsOpenBlockForm?:any, activeBlockFormClick: any} ) => {
+
     return (
         <StyledBoxBth>
-            <ContactBth>Email me</ContactBth>
+            <ContactBth onClick={props.activeBlockFormClick}>Email me</ContactBth>
             <DownloadCv/>
         </StyledBoxBth>
     );

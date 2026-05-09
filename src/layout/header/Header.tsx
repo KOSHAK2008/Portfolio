@@ -29,14 +29,14 @@ const items = [
     },
 ];
 
-export const Header = () => {
+export const Header = (props: {menuIsOpenBlockForm:any, activeBlockFormClick: any}) => {
     return (
         <StyledHeader>
             <Container>
                 <FlexWraper justify={"space-between"}>
                     <Logo/>
-                    <HeaderMenu MenuItems={items}/>
-                    <MobileMenu MenuItems={items}/>
+                    <HeaderMenu menuIsOpenBlockForm={props.menuIsOpenBlockForm} activeBlockFormClick={props.activeBlockFormClick} MenuItems={items}/>
+                    <MobileMenu menuIsOpenBlockForm={props.menuIsOpenBlockForm} activeBlockFormClick={props.activeBlockFormClick} MenuItems={items}/>
                 </FlexWraper>
             </Container>
         </StyledHeader>

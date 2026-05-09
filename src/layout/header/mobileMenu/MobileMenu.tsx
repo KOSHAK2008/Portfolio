@@ -5,7 +5,7 @@ import {LogoMobile} from "../../../components/logo/LogoMobile.tsx";
 import {useState} from "react";
 import {Link} from "react-scroll";
 
-export const MobileMenu = (props: { MenuItems: Array<{ title: string, href: string }> }) => {
+export const MobileMenu = (props: { MenuItems: Array<{ title: string, href: string }>, activeBlockFormClick:any, menuIsOpenBlockForm:any }) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const onBurgerBthClick = () => {
         setMenuIsOpen(!menuIsOpen)
@@ -31,7 +31,7 @@ export const MobileMenu = (props: { MenuItems: Array<{ title: string, href: stri
                         </ListItem>
                     })}
                 </ul>
-                <ContactButton/>
+                <ContactButton activeBlockFormClick={props.activeBlockFormClick} menuIsOpenBlockForm={props.menuIsOpenBlockForm}/>
             </MobileMenuPopup>
         </StyledMenu>
     );

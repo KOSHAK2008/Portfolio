@@ -3,7 +3,7 @@ import {theme} from "../../../styles/Theme.ts";
 import {ContactButton} from "../../../components/contact/ContactButton.tsx";
 import {Link} from "react-scroll";
 
-export const HeaderMenu = (props: { MenuItems: Array<{ title: string, href: string }> }) => {
+export const HeaderMenu = (props: { MenuItems: Array<{ title: string, href: string }>, activeBlockFormClick:any, menuIsOpenBlockForm:any} ) => {
     return (
         <StyledMenu>
             <ul>
@@ -20,7 +20,7 @@ export const HeaderMenu = (props: { MenuItems: Array<{ title: string, href: stri
                     </ListItem>
                 })}
             </ul>
-            <ContactButton/>
+            <ContactButton activeBlockFormClick={props.activeBlockFormClick} menuIsOpenBlockForm={props.menuIsOpenBlockForm}/>
         </StyledMenu>
     );
 };

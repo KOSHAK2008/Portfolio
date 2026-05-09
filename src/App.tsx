@@ -8,18 +8,29 @@ import {Contact} from "./layout/section/contact/Contact.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {BlockForm} from "./components/blockForm/BlockForm.tsx";
 import {Particle} from "./components/particle/Particle.tsx";
+import {useState} from "react";
 
 function App() {
+
+    const [menuIsOpenBlockForm, setMenuIsOpenBlockForm] = useState(false);
+    const activeBlockFormClick = () => {
+        setMenuIsOpenBlockForm(true)
+    }
+
+    const closeBlockFormClick = () => {
+        setMenuIsOpenBlockForm(false);
+    }
+
     return (
         <div className="App">
             <Particle/>
-            <BlockForm/>
-            <Header/>
-            <Homepage/>
+            <BlockForm closeBlockFormClick={closeBlockFormClick} menuIsOpenBlockForm={menuIsOpenBlockForm}></BlockForm>
+            <Header menuIsOpenBlockForm={menuIsOpenBlockForm} activeBlockFormClick={activeBlockFormClick}/>
+            <Homepage menuIsOpenBlockForm={menuIsOpenBlockForm} activeBlockFormClick={activeBlockFormClick}/>
             <Skills/>
             <Works/>
             <Projects/>
-            <Contact/>
+            <Contact closeBlockFormClick={closeBlockFormClick}/>
             <Footer/>
         </div>
     )

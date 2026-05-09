@@ -3,10 +3,10 @@ import {theme} from "../../../styles/Theme.ts";
 import emailjs from '@emailjs/browser';
 import {ElementRef, useRef} from "react";
 
-export const FormContact = () => {
+export const FormContact = (props: { closeBlockFormClick: any }) => {
     const form = useRef<ElementRef<"form">>(null);
 
-    const sendEmail = (e:any) => {
+    const sendEmail = (e: any) => {
         e.preventDefault();
 
         if (!form.current) return;
@@ -23,7 +23,11 @@ export const FormContact = () => {
                     console.log('FAILED...', error.text);
                 },
             );
-        e.target.reset()
+        e.target.reset();
+        console.log(props.closeBlockFormClick);
+        // e.target.addEventListener(() => {
+        //     return (props.closeBlockFormClick)
+        // })
     };
 
     return (
@@ -37,7 +41,8 @@ export const FormContact = () => {
                 <FieldLabel htmlFor="textEmail" title={"Your email address:"}>Your email address:</FieldLabel>
             </BlockField>
             <BlockField>
-                <Field required id="textOffer" placeholder={"Write about your offer"} as={"textarea"} name={"user_message"}/>
+                <Field required id="textOffer" placeholder={"Write about your offer"} as={"textarea"}
+                       name={"user_message"}/>
                 <FieldLabel htmlFor="textOffer" title={"Tell about the project:"}>Your offer:</FieldLabel>
             </BlockField>
             <ButtonForm type={"submit"}>Send</ButtonForm>

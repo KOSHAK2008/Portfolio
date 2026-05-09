@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme.ts";
+import {BlockForm} from "../blockForm/BlockForm.tsx";
 
-export const ContactButton = () => {
+export const ContactButton = (props: {activeBlockFormClick:any, menuIsOpenBlockForm: any}) => {
+
     return (
-            <ContactBth >Contact Me</ContactBth>
+        <div>
+            {props.menuIsOpenBlockForm && <BlockForm/>}
+            <ContactBth onClick={props.activeBlockFormClick} >Contact Me</ContactBth>
+        </div>
     );
 };
 
@@ -17,7 +22,7 @@ export const ContactBth = styled.button`
     color: ${theme.colors.linkColor};
     border-radius: 20px;
     transition: color 0.3s ease;
-    
+
     @media screen and (max-width: 550px) {
         & {
             font-size: 16px;
@@ -29,7 +34,8 @@ export const ContactBth = styled.button`
         cursor: pointer;
         border-color: ${theme.colors.icons.colorBgActive};
     }
-    &:active{
+
+    &:active {
         transform: scale(1.1);
     }
 `

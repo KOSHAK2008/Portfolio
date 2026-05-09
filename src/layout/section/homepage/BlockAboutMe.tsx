@@ -3,11 +3,11 @@ import {BoxBth} from "./BoxBth.tsx";
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
 
-export const BlockAboutMe = () => {
+export const BlockAboutMe = (props: {menuIsOpenBlockForm:any, activeBlockFormClick: any} ) => {
     return (
         <StyledBlockAboutMe>
             <TextBlock/>
-            <BoxBth/>
+            <BoxBth menuIsOpenBlockForm={props.menuIsOpenBlockForm} activeBlockFormClick={props.activeBlockFormClick} />
         </StyledBlockAboutMe>
     );
 };

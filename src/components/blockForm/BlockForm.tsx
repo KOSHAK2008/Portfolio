@@ -1,24 +1,27 @@
 import styled, {css} from "styled-components";
 import {FormContact} from "../../layout/section/contact/FormContact.tsx";
 import {theme} from "../../styles/Theme.ts";
-import {useState} from "react";
 
-export const BlockForm = () => {
-    const [menuIsOpenBlockForm, setMenuIsOpenBlockForm] = useState(true);
-    const onBlockFormClick = () => {setMenuIsOpenBlockForm(!menuIsOpenBlockForm)}
+
+type blockFormPropsType = {
+    menuIsOpenBlockForm?: boolean,
+    closeBlockFormClick?: any,
+}
+export const BlockForm = (props: blockFormPropsType) => {
+
     return (
-        <StyledBlockForm isOpen={menuIsOpenBlockForm}>
+        <StyledBlockForm isOpen={props.menuIsOpenBlockForm}>
             <StyledForm>
-                <BlockFormButton isOpen={menuIsOpenBlockForm} onClick={onBlockFormClick}>
+                <BlockFormButton isOpen={props.menuIsOpenBlockForm} onClick={props.closeBlockFormClick}>
                     <span></span>
                 </BlockFormButton>
-                <FormContact />
+                <FormContact closeBlockFormClick={props.closeBlockFormClick}/>
             </StyledForm>
         </StyledBlockForm>
     );
 };
 
-export const StyledBlockForm = styled.div<{ isOpen: boolean }>`
+export const StyledBlockForm = styled.div<{ isOpen?: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -29,8 +32,8 @@ export const StyledBlockForm = styled.div<{ isOpen: boolean }>`
     align-items: center;
     background-color: ${theme.colors.thirdBg};
     display: none;
-    
-    ${props => props.isOpen && css<{isOpen: boolean}> `
+
+    ${props => props.isOpen && css<{ isOpen?: boolean }>`
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +41,7 @@ export const StyledBlockForm = styled.div<{ isOpen: boolean }>`
     `}
 `
 
-const BlockFormButton = styled.button<{ isOpen: boolean }>`
+const BlockFormButton = styled.button<{ isOpen?: boolean }>`
     position: absolute;
     width: 50px;
     height: 50px;
@@ -49,24 +52,24 @@ const BlockFormButton = styled.button<{ isOpen: boolean }>`
     border: 1px solid ${theme.colors.borderColor};
     z-index: 1000;
 
-        &::before {
-            content: "";
-            display: block;
-            width: 53px;
-            height: 4px;
-            background-color: ${theme.colors.borderColor};
-            transform: rotate(45deg) translateY(3px);
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            width: 53px;
-            height: 4px;
-            background-color: ${theme.colors.borderColor};
-            transform: rotate(-45deg) translateY(-2px);
-        }
+    &::before {
+        content: "";
+        display: block;
+        width: 53px;
+        height: 4px;
+        background-color: ${theme.colors.borderColor};
+        transform: rotate(45deg) translateY(3px);
     }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 53px;
+        height: 4px;
+        background-color: ${theme.colors.borderColor};
+        transform: rotate(-45deg) translateY(-2px);
+    }
+}
 `
 
 const StyledForm = styled.div`
@@ -81,7 +84,7 @@ const StyledForm = styled.div`
     background-color: ${theme.colors.primaryBgPopup};
     border: 1px solid ${theme.colors.borderColor};
 
-    //color: ${theme.colors.fontDark};
+        //color: ${theme.colors.fontDark};
 
     & button {
         color: ${theme.colors.font};

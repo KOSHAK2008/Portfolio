@@ -6,14 +6,14 @@ import {Container} from "../../../components/Container.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {BlockAboutMe} from "./BlockAboutMe.tsx";
 
-export const Homepage = () => {
+export const Homepage = (props: {menuIsOpenBlockForm:any, activeBlockFormClick: any}) => {
     return (
         <StyledHomepage id={"home"}>
             <Container>
                 <HomepageGround>
                     <HomepageBlock>
                         <TextHeadName/>
-                        <BlockAboutMe/>
+                        <BlockAboutMe  menuIsOpenBlockForm={props.menuIsOpenBlockForm} activeBlockFormClick={props.activeBlockFormClick} />
                     </HomepageBlock>
                     <Photo src={photo} alt="No Photo"/>
                 </HomepageGround>

@@ -4,13 +4,13 @@ import {MySocialData} from "./MySocialData.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
 
-export const Contact = () => {
+export const Contact = (props: {closeBlockFormClick:any}) => {
     return (
         <StyledContact id={"contact"}>
             <Container>
                 <BlockContact>
                     <MySocialData/>
-                    <FormContact/>
+                    <FormContact closeBlockFormClick={props.closeBlockFormClick}/>
                 </BlockContact>
             </Container>
         </StyledContact>
