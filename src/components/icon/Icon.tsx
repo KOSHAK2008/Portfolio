@@ -34,6 +34,7 @@ export const Icon = (props: IconPropsType) => {
 const StyledIcon = styled.svg<StyledIconPropsType>`
     display: inline-block;
     margin: 0 0.5rem;
+    transition: fill 0.3s ease, stroke  0.3s ease;
 
     animation: bounce; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;

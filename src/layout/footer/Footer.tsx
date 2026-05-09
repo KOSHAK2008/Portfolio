@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
     text-align: center;
 `
 const TextFooter = styled.small`
+    position: relative;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.8;

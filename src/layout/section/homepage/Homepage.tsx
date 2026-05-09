@@ -31,7 +31,8 @@ const StyledHomepage = styled.div`
 `
 
 const HomepageGround = styled.div`
-display: flex;
+    position: relative;
+    display: flex;
     justify-content: space-between;
 `
 
@@ -49,7 +50,7 @@ const HomepageBlock = styled.div`
         & {
             padding: 25px;
             color: ${theme.colors.fontDark};
-            background-color: ${theme.colors.thierdBg};
+            background-color: ${theme.colors.thirdBg};
             border-radius: 5%;
             position: absolute;
             top: 15%;

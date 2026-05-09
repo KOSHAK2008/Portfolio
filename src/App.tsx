@@ -7,10 +7,12 @@ import {Projects} from "./layout/section/projects/Projects.tsx";
 import {Contact} from "./layout/section/contact/Contact.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {BlockForm} from "./components/blockForm/BlockForm.tsx";
+import {Particle} from "./components/particle/Particle.tsx";
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <BlockForm/>
             <Header/>
             <Homepage/>

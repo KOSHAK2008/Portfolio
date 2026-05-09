@@ -22,6 +22,7 @@ const StyledProjects = styled.section`
     padding: 50px 0;
 `
 const TitleSection = styled.h2`
+    position: relative;
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;

@@ -1,33 +1,37 @@
 export const theme = {
     colors: {
-        primaryBg: "#786352", // Цвет основного фона
-        primaryBgPopup: "rgba(120, 99, 82, 0.95)", // Цвет основного фона Popup
+        primaryBg: "#dcccbe", // Цвет основного фона #dcccbe or #786352
+        primaryBgPopup: "rgba(220 204 190 / 0.80)", // Цвет основного фона Popup
         secondaryBg: "#533523", // Цвет второстепенного фона
-        thierdBg: "rgba(230, 218, 208, 0.3)", // Цвет светлого фона для темного текста
-
-        font: "#b4acac", // Цвет текста
-        fontDark: "#141311", // Цвет темного текста
+        thirdBg: "rgba(230, 218, 208, 0.3)", // Цвет светлого фона для темного текста
+        colorBgBlock: "rgba(239, 232, 225, 0.5)", // Цвет фона блока
 
 
-        accent: "#ae7d69", // Цвет ссылок, кнопок фон
+        font: "#452517", // Цвет текста
+        fontDark: "#504a45", // Цвет темного текста
+        fontFooter: "#b4acac", // Цвет текста на темном фоне
+        borderColor: "#ae7d69", // Цвет границы кнопок
+
+        accent: "#caac9c", // Цвет ссылок, кнопок фон
         linkColor: "#2b190e", // Цвет текста в ссылках, кнопках
-        linkColorActive: "red", // Цвет текста в ссылках, кнопках наведенный
+        linkColorActive: "#e67e22", // Цвет текста в ссылках, кнопках наведенный
 
         icons: {
             color: "#2b190e", // Цвет Иконок "fill"
             colorBg: "#2b190e", //Цвет иконок "stroke"
-            colorMyLogo: "#3c3834", // Цвет мой лого "fill"
-            colorActiveMyLogo: "#2b190e", // Цвет наведенных мой лого "fill"
+            colorMyLogo: "#645d56", // Цвет мой лого "fill"
+            colorActiveMyLogo: "#e67e22", // Цвет наведенных мой лого "fill"
             colorWebsites: "#dcccbe", // Цвет иконок вебсайтов в моих контактах
-            colorActive: "red", // Цвет наведенных иконок "fill"
-            colorBgActive: "red", // Цвет наведенных иконок "stroke"
+            colorActive: "#e67e22", // Цвет наведенных иконок "fill"
+            colorBgActive: "#e67e22", // Цвет наведенных иконок "stroke"
         },
 
         slider: {
-            colorBgSlide: "rgb(239, 232, 225, 0.1)", // Цвет фона слайдера
+            colorBgSlide: "rgb(239, 232, 225)", // Цвет фона слайдера
             colorTitleSlide: "#3c3834", // Цвет заголовка слайдера
-            colorLinkSlide: "#645d56", // Цвет ссылки слайдера
-            colorLinkSlideActive: "#2b190e", // Цвет наведенной ссылки слайдера
+            colorTextSlide: "#504a45", // Цвет текста слайдера
+            colorLinkSlide: "#2b190e", // Цвет ссылки слайдера
+            colorLinkSlideActive: "#e67e22", // Цвет наведенной ссылки слайдера
         },
 
         footer: {

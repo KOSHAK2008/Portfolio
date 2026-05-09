@@ -34,6 +34,7 @@ const StyledSlide = styled.div`
     border-radius: 25px;
     overflow: hidden;
     background-color: ${theme.colors.slider.colorBgSlide};
+    border: 1px solid ${theme.colors.borderColor};
 
     &:hover {
         cursor: grabbing;

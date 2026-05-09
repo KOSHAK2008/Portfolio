@@ -60,6 +60,7 @@ export const Slider = () => (
 );
 
 const StyledSlider = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 50px;

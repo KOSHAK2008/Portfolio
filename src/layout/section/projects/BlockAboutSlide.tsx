@@ -53,6 +53,7 @@ const Text = styled.p`
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer/Edge */
     user-select: none;         /* Стандартный CSS */
+    color: ${theme.colors.slider.colorTextSlide};
     
     @media ${theme.media.tabletNormal} {
         & {
@@ -62,6 +63,7 @@ const Text = styled.p`
 `
 const Path = styled.a`
     color: ${theme.colors.slider.colorLinkSlide};
+    transition: color 0.3s ease;
 
     &:hover {
         color: ${theme.colors.slider.colorLinkSlideActive};

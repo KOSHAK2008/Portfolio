@@ -32,6 +32,8 @@ const StyledTextBlock = styled.h1`
     font-weight: 400;
     font-size: 20px;
     line-height: 1.8;
+    color: ${theme.colors.fontDark};
+    
 
     p {
         display: none;

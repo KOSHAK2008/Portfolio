@@ -23,6 +23,7 @@ const StyledContact = styled.section`
 `
 
 const BlockContact = styled.div`
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-content: space-between;

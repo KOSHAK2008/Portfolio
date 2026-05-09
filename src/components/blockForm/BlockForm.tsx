@@ -27,7 +27,7 @@ export const StyledBlockForm = styled.div<{ isOpen: boolean }>`
     z-index: 3;
     justify-content: center;
     align-items: center;
-    background-color: ${theme.colors.thierdBg};
+    background-color: ${theme.colors.thirdBg};
     display: none;
     
     ${props => props.isOpen && css<{isOpen: boolean}> `
@@ -45,25 +45,26 @@ const BlockFormButton = styled.button<{ isOpen: boolean }>`
     border-radius: 5px;
     top: 25px;
     right: 20px;
-    background-color: ${theme.colors.icons.colorMyLogo};
+    background-color: ${theme.colors.colorBgBlock};
+    border: 1px solid ${theme.colors.borderColor};
     z-index: 1000;
 
         &::before {
             content: "";
             display: block;
-            width: 50px;
+            width: 53px;
             height: 4px;
-            background-color: ${theme.colors.font};
-            transform: rotate(45deg) translateY(1px);
+            background-color: ${theme.colors.borderColor};
+            transform: rotate(45deg) translateY(3px);
         }
 
         &::after {
             content: "";
             display: block;
-            width: 50px;
+            width: 53px;
             height: 4px;
-            background-color: ${theme.colors.font};
-            transform: rotate(-45deg) translateY(-1px);
+            background-color: ${theme.colors.borderColor};
+            transform: rotate(-45deg) translateY(-2px);
         }
     }
 `
@@ -73,22 +74,33 @@ const StyledForm = styled.div`
     width: 50%;
     height: 80%;
     border-radius: 25px;
-    background-color: #dcccbe;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 4;
+    background-color: ${theme.colors.primaryBgPopup};
+    border: 1px solid ${theme.colors.borderColor};
 
-    color: ${theme.colors.fontDark};
+    //color: ${theme.colors.fontDark};
 
     & button {
-        color: ${theme.colors.fontDark};
+        color: ${theme.colors.font};
         text-align: center;
 
     }
 
     & input, textarea {
         border-bottom: 1px solid ${theme.colors.fontDark};
+        color: ${theme.colors.font};
+    }
+
+    & label {
+        color: ${theme.colors.fontDark};
+    }
+
+    &input:focus-visible {
+        outline: 1px solid ${theme.colors.font};
+        border-radius: 5px;
     }
 
     @media screen and (max-width: 1300px) {

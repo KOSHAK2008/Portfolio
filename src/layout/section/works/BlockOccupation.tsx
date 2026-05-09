@@ -1,53 +1,47 @@
 import {CardOccupation} from "./CardOccupation.tsx";
-import {FlexWraper} from "../../../components/FlexWraper.tsx";
+import styled from "styled-components";
 
-const data = [
-    {
-        title: "school",
-        place: "Lida, Masherova",
-        date: "Sep 1997 - may 2006",
-        iconBuilding: "building",
-        iconDate: "date",
-        iconLocation: "location",
-        heightIcon:"30",
-        widthIcon: "30",
-        viewBoxIconBuilding: "0 0 7 9",
-        viewBoxIconDate: "0 0 12 9",
-        viewBoxIconLocation: "0 0 12 12",
-    },
-    {
-        title: "school",
-        place: "Lida, Masherova",
-        date: "Sep 1997 - may 2006",
-        iconBuilding: "building",
-        iconDate: "date",
-        iconLocation: "location",
-        heightIcon:"30",
-        widthIcon: "30",
-        viewBoxIconBuilding: "0 0 7 9",
-        viewBoxIconDate: "0 0 12 9",
-        viewBoxIconLocation: "0 0 12 12",
-    },
-    {
-        title: "school",
-        place: "Lida, Masherova",
-        date: "Sep 1997 - may 2006",
-        iconBuilding: "building",
-        iconDate: "date",
-        iconLocation: "location",
-        heightIcon:"30",
-        widthIcon: "30",
-        viewBoxIconBuilding: "0 0 7 9",
-        viewBoxIconDate: "0 0 12 9",
-        viewBoxIconLocation: "0 0 12 12",
-    },
-]
+type BlockOccupationTypeProps = {
+    data: dataPropsType,
+    title: string,
+}
 
-export const BlockOccupation = () => {
+type dataPropsType = Array<
+    {
+        title?: string,
+        place?: string,
+        location?: string,
+        date?: string;
+        iconBuilding?: string,
+        iconDate?: string,
+        iconLocation?: string,
+        heightIcon?: string,
+        widthIcon?: string,
+        viewBoxIconBuilding?: string,
+        viewBoxIconDate?: string,
+        viewBoxIconLocation?: string,
+    }>
+
+export const BlockOccupation = (props: BlockOccupationTypeProps) => {
     return (
-        <FlexWraper justify={"space-around"} direction={"column"}>
-            <CardOccupation dataExperience={data}/>
-        </FlexWraper>
+        <StyledBlockOccupation>
+            <h2>{props.title}</h2>
+            <CardOccupation data={props.data}/>
+        </StyledBlockOccupation>
     );
 };
 
+const StyledBlockOccupation = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 42px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+`

@@ -15,6 +15,7 @@ const DownloadCvBth = styled.a`
     gap: 10px;
     font-weight: 400;
     font-size: 20px;
+    transition: color 0.3s ease;
 
     @media ${theme.media.mobile} {
         & {

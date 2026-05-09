@@ -53,6 +53,7 @@ const FieldLabel = styled.label`
     line-height: 1.2;
     position: absolute;
     left: 2px;
+    color: ${theme.colors.fontFooter};
     transition: 0.2s;
 
     @media ${theme.media.mobile} {
@@ -88,7 +89,7 @@ const Field = styled.input`
     }
     
     &:focus-visible {
-        outline: 1px solid ${theme.colors.font};
+        outline: 1px solid ${theme.colors.accent};
         border-radius: 5px;
     }
 
@@ -105,6 +106,8 @@ const ButtonForm = styled.button`
     font-size: 30px;
     line-height: 1.2;
     color: ${theme.colors.accent};
+    transition: color 0.3s ease;
+    
 
     @media ${theme.media.mobile} {
         & {

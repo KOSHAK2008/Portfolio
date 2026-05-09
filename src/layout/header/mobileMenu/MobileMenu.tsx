@@ -56,14 +56,15 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     border-radius: 5px;
     top: 25px;
     right: 20px;
-    background-color: ${theme.colors.icons.colorMyLogo};
+    background-color: ${theme.colors.slider.colorBgSlide};
+    border: 1px solid ${theme.colors.borderColor};
     z-index: 1000;
 
     span {
         display: block;
         width: 34px;
         height: 4px;
-        background-color: ${theme.colors.font};
+        background-color: ${theme.colors.borderColor};
         position: absolute;
         top: 23px;
         left: 7px;
@@ -76,7 +77,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
             display: block;
             width: 34px;
             height: 4px;
-            background-color: ${theme.colors.font};
+            background-color: ${theme.colors.borderColor};
             transform: translateY(-10px);
 
             ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -90,7 +91,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
             display: block;
             width: 34px;
             height: 4px;
-            background-color: ${theme.colors.font};
+            background-color: ${theme.colors.borderColor};
             transform: translateY(7px);
 
             ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -134,6 +135,7 @@ const ListItem = styled.li`
 // @ts-expect-error
 const NavLink = styled(Link)`
     font-weight: 500;
+    transition: color 0.3s ease;
 
     &:hover {
         cursor: pointer;

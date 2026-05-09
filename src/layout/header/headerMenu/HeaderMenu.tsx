@@ -10,8 +10,10 @@ export const HeaderMenu = (props: { MenuItems: Array<{ title: string, href: stri
                 {props.MenuItems.map((item, index) => {
                     return <ListItem key={index}>
                         <NavLink
+                            activeclass="active"
                             to={item.href}
                             smooth={true}
+                            spy={true}
                         >
                             {item.title}
                         </NavLink>
@@ -48,8 +50,11 @@ const ListItem = styled.li`
 // @ts-expect-error
 const NavLink = styled(Link)`
     font-weight: 500;
-
-    &:hover {
+    transition: color 0.3s ease;
+    
+    &:hover
+    //, &.active 
+    {
         cursor: pointer;
         color: ${theme.colors.linkColorActive};
     }

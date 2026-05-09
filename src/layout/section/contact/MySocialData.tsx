@@ -24,6 +24,7 @@ const StyledMySocialData = styled.div`
 const TextMySocial = styled.h2`
     font-size: 100px;
     margin-bottom: 50px;
+    color: ${theme.colors.fontFooter};
 
     @media ${theme.media.mobile} {
         & {    
