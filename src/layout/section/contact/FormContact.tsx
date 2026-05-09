@@ -1,19 +1,43 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme.ts";
+import emailjs from '@emailjs/browser';
+import {ElementRef, useRef} from "react";
 
 export const FormContact = () => {
+    const form = useRef<ElementRef<"form">>(null);
+
+    const sendEmail = (e:any) => {
+        e.preventDefault();
+
+        if (!form.current) return;
+
+        emailjs
+            .sendForm('service_zy7660b', 'template_i7yvtat', form.current, {
+                publicKey: 'BRgx3uzjG2-OAlp1a',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+        e.target.reset()
+    };
+
     return (
-        <StyledFormContact>
+        <StyledFormContact ref={form} onSubmit={sendEmail}>
             <BlockField>
-                <Field id="textName" placeholder={"FirstName LastName"}/>
+                <Field required id="textName" placeholder={"FirstName LastName"} name={"user_name"}/>
                 <FieldLabel htmlFor="textName" title={"Your name"}>Your name:</FieldLabel>
             </BlockField>
             <BlockField>
-                <Field id="textEmail" placeholder={"YourEmail@gmail.com"} type={"email"}/>
+                <Field required id="textEmail" placeholder={"YourEmail@gmail.com"} type={"email"} name={"user_email"}/>
                 <FieldLabel htmlFor="textEmail" title={"Your email address:"}>Your email address:</FieldLabel>
             </BlockField>
             <BlockField>
-                <Field id="textOffer" placeholder={"Write about your offer"} as={"textarea"}/>
+                <Field required id="textOffer" placeholder={"Write about your offer"} as={"textarea"} name={"user_message"}/>
                 <FieldLabel htmlFor="textOffer" title={"Tell about the project:"}>Your offer:</FieldLabel>
             </BlockField>
             <ButtonForm type={"submit"}>Send</ButtonForm>
@@ -78,16 +102,16 @@ const Field = styled.input`
     line-height: 1.2;
     z-index: 1;
 
-&:focus + label,
-&:not(:placeholder-shown) + label {
-    transform: translateY( -2.2rem);
-    font-size: 1.5rem;
-}
-    
-    &::placeholder{
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+        transform: translateY(-2.2rem);
+        font-size: 1.5rem;
+    }
+
+    &::placeholder {
         opacity: 0;
     }
-    
+
     &:focus-visible {
         outline: 1px solid ${theme.colors.accent};
         border-radius: 5px;
@@ -107,7 +131,7 @@ const ButtonForm = styled.button`
     line-height: 1.2;
     color: ${theme.colors.accent};
     transition: color 0.3s ease;
-    
+
 
     @media ${theme.media.mobile} {
         & {

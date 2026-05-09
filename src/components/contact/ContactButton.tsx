@@ -27,6 +27,7 @@ export const ContactBth = styled.button`
     &:hover {
         color: ${theme.colors.icons.colorBgActive};
         cursor: pointer;
+        border-color: ${theme.colors.icons.colorBgActive};
     }
     &:active{
         transform: scale(1.1);

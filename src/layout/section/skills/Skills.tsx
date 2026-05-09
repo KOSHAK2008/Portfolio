@@ -46,13 +46,13 @@ export const Skills = () => {
     return (
         <StyledSkills id={"skills"}>
             <Container>
-                <BlockSkils>
+                <BlockSkills>
                     <JackInTheBox cascade damping={0.2}>
                         {iconData.map((i, index) => {
                             return <Icon iconId={i.iconId} key={index} viewBox={i.viewBox}/>
                         })}
                     </JackInTheBox>
-                </BlockSkils>
+                </BlockSkills>
             </Container>
         </StyledSkills>
     );
@@ -75,16 +75,16 @@ const StyledSkills = styled.section`
     }
 
 `
-const BlockSkils = styled.div`
+const BlockSkills = styled.div`
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     align-items: center;
     justify-items: center;
     gap: 25px;
 
-    @media ${theme.media.tabletBig} {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    //@media ${theme.media.tabletBig} {
+        //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
     // @media ${theme.media.tabletMedium} {
