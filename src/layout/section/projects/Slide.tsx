@@ -27,6 +27,7 @@ const ImgSlider = styled.img`
         & {
             width: 100%;
         }
+    }
 `
 const StyledSlide = styled.div`
     display: flex;
@@ -36,12 +37,13 @@ const StyledSlide = styled.div`
     background-color: ${theme.colors.slider.colorBgSlide};
     border: 1px solid ${theme.colors.borderColor};
 
-    &:hover {
-        cursor: grabbing;
-    }
-
     @media ${theme.media.tabletNormal} {
         & {
             flex-direction: column;
+            align-items: center;
+        }
+    }
+        &:hover {
+            cursor: grabbing;
         }
 `

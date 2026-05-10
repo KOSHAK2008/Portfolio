@@ -46,5 +46,6 @@ export const theme = {
         tabletNormal: "screen and (max-width: 950px)",
         tablet: "screen and (max-width: 780px)",
         mobile: "screen and (max-width: 576px)",
+        mobileMini: "screen and (max-width: 375px)",
     }
 }

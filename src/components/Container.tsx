@@ -16,6 +16,7 @@ export const Container = styled.div<ContainerTypeProps>`
         & {
             padding: 0 120px;
         }
+    }
 
         @media ${theme.media.tabletMedium} {
             & {

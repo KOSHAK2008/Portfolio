@@ -32,7 +32,7 @@ const StyledPhoto = styled.img`
             height: 500px;
         }
     }
-     @media screen and (max-width: 367px) {
+     @media screen and (max-width: 400px) {
          & {
              height: 600px;
          }
